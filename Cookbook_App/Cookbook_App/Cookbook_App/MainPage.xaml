@@ -4,11 +4,29 @@
              xmlns:local="clr-namespace:Cookbook_App"
              x:Class="Cookbook_App.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout BackgroundColor="LightGray">
+            <!-- Place new controls here -->
+            <Label Text="Cookbook" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   />
+            
+            <Button Text="Tap to start" 
+                    Clicked="Button_Clicked" 
+                    Grid.Row="1" 
+                    BackgroundColor="Indigo">
+                
+            </Button>
+
+        </StackLayout>
+    </Grid>
+    
 
 </ContentPage>

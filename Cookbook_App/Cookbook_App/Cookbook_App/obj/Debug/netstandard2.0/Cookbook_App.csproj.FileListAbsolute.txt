@@ -1,0 +1,13 @@
+C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\bin\Debug\netstandard2.0\Cookbook_App.deps.json
+C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\bin\Debug\netstandard2.0\Cookbook_App.dll
+C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\bin\Debug\netstandard2.0\Cookbook_App.pdb
+C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\Cookbook_App.csprojAssemblyReference.cache
+C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\Cookbook_App.csproj.CoreCompileInputs.cache
+C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\Cookbook_App.AssemblyInfoInputs.cache
+C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\Cookbook_App.AssemblyInfo.cs
+C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\Cookbook_App.dll
+C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\Cookbook_App.pdb
+C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\CategoryPage.xaml.g.cs
