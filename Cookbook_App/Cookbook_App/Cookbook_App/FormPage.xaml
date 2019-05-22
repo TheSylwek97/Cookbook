@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cookbook_App.FormPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/> <!-- Lab- Title -->
+                <RowDefinition Height="20"/> <!-- Name + Add Photo -->
+                <RowDefinition Height="10"/> <!-- Lab-Ingredients-->
+                <RowDefinition Height="20"/> <!-- $Ingredient-->
+                <RowDefinition Height="10"/> <!-- Btn Add next -->
+                <RowDefinition Height="10"/> <!-- Lab- Recipe-->
+                <RowDefinition Height="30"/> <!-- Text area recipe -->
+                <RowDefinition Height="10"/> <!-- Btn- Add all -->
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+        <StackLayout>
+            <Label Text="Dodaj Przepis"></Label>
+                <Entry x:Name="Name" Grid.Row="1" Grid.Column="0" > </Entry>
+                <Label Text="Dodaj zdjęcie" Grid.Row="1" Grid.Column="1" ></Label>
+
+                <Label x:Name="Ingredients" Text="Składniki" Grid.Row="2"></Label>
+                <Entry x:Name="$Ingredient" Grid.Row="3"></Entry>
+                <Button x:Name="Add_Next" Text="+" Grid.Row="4"></Button>
+
+                <Label x:Name="Recipe" Text="Przepis" Grid.Row="5"></Label>
+                <Entry x:Name="Text_Area" Grid.Row="6"></Entry>
+
+                <Button x:Name="Add_Recipe" Text="Dodaj przepis" Grid.Row="7"></Button>
+
+        </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -10,13 +10,20 @@
             <RowDefinition Height="5*" />
             <RowDefinition Height="2*" />
         </Grid.RowDefinitions>
-
+        
+        <Image x:Name="BgImage"/>
+        
         <StackLayout BackgroundColor="LightGray">
-            <!-- Place new controls here -->
-            <Label Text="Cookbook" 
+
+            <Image Source="Cookbook.jpeg"
+                   HorizontalOptions="Fill"
+                   Aspect="AspectFill">
+                
+            </Image>
+            <!-- <Label Text="Cookbook" 
                    HorizontalOptions="Center"
                    VerticalOptions="CenterAndExpand"
-                   />
+                   />-->
             
             <Button Text="Tap to start" 
                     Clicked="Button_Clicked" 

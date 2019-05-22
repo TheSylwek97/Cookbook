@@ -7,8 +7,10 @@ using Xamarin.Forms;
 
 namespace Cookbook_App
 {
+
     public partial class MainPage : ContentPage
     {
+
         public MainPage()
         {
             InitializeComponent();            

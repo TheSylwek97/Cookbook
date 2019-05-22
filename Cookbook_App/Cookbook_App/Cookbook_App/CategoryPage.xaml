@@ -3,10 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cookbook_App.CategoryPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Button x:Name="Soups"
+                    Text="Soups"
+                    Grid.Row="0" 
+                    BackgroundColor="DarkGray"
+                    Clicked="Soups_Clicked">
+                
+            </Button>
+            <Button x:Name="Main_Courses"
+                    Text="Main_Courses"
+                    Grid.Row="1" 
+                    BackgroundColor="Gray"
+                    Clicked="Main_Courses_Clicked">
+
+            </Button>
+            <Button x:Name="Desserts"
+                    Text="Desserts"
+                    Grid.Row="2" 
+                    BackgroundColor="LightGray"
+                    Clicked="Desserts_Clicked">
+
+            </Button>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

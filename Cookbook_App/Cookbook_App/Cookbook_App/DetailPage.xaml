@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cookbook_App.DetailPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="5"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Label x:Name="Title" Text="" BackgroundColor="Green"></Label>
+            <Image Grid.Row="1"></Image>
+            <Label x:Name="Rating" Grid.Row="2" BackgroundColor="Green" > </Label>
+
+            <Label x:Name="Ingredients" Text="Składniki" Grid.Row="3"></Label>
+            <ListView Grid.Row="4" BackgroundColor="Green"></ListView>
+
+            <Label x:Name="Recipe" Text="Przepis" Grid.Row="5"></Label>
+            <ListView Grid.Row="6" BackgroundColor="Green"></ListView>
+
+            <Button x:Name="Edit" Text="Edytuj"  Grid.Row="7" Grid.Column="0" Clicked="Edit_Clicked"></Button>
+            <Button x:Name="Delete" Text="Usuń"  Grid.Row="7" Grid.Column="1" Clicked="Delete_Clicked"></Button>
+            <Button x:Name="Comments" Text="Komentarze" Grid.Row="8" Clicked="Comments_Clicked"></Button>
+            <Button x:Name="Add" Text="Dodaj"  Grid.Row="9" Clicked="Add_Clicked"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

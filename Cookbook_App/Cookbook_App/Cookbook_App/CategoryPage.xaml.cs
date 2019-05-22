@@ -16,5 +16,20 @@ namespace Cookbook_App
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private async void Soups_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ListPage());
+        }
+
+        private async void Main_Courses_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ListPage());
+        }
+
+        private async void Desserts_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ListPage());
+        }
+    }
 }
