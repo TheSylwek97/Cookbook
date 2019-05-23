@@ -27,18 +27,18 @@ namespace Cookbook_App
         protected override void OnResume()
         {
             // Handle when your app resumes
-        }/*
-        public static ImageSource GetImageByCategory(CategoryDataType cate)
+        }
+        public static ImageSource GetImageByCategory(CategoryDataType cat)
         {
-            switch (category)
+            switch (cat)
             {
                 case CategoryDataType.Dessers:
-                    return ImageSource.FormFile(stirng.Empty);
-                case CategoryDataType.Soup:
+                    return ImageSource.FromResource(string.Empty);
+                case CategoryDataType.Soups:
                     return ImageSource.FormFile("");
                 default:
                     return ImageSource.FormFile("123");
             }
-        }*/
+        }
     }
 }
