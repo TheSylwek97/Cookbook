@@ -9,16 +9,26 @@ namespace Cookbook_App
 {
     public partial class App : Application
     {
+        private static LocalDatabase localDb;
+
+        public static LocalDatabase LocalDB
+        {
+            get
+            {
+                if (localDb == null)
+                {
+                    var fileHelper = DependencyService.Get<IFileHelper>();
+                    var fullPath = fileHelper.GetLocalFilepath("app.database");
+                    localDb = new LocalDatabase(fullPath);
+                }
+
+                return localDb;
+            }
+        }
         public App()
         {
             InitializeComponent();
-
-
-            var fileHelper = DependencyService.Get<IFileHelper>();
-            var fullPath = fileHelper.GetLocalFilepath("app.database");
-
             MainPage = new NavigationPage(new MainPage());
-            var db = new LocalDatabase(fullPath);
 
         }
 
