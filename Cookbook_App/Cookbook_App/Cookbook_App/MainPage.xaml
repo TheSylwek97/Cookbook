@@ -15,7 +15,8 @@
         
         <StackLayout BackgroundColor="LightGray">
 
-            <Image Source="Cookbook.jpeg"
+            <Image Source="Assets/Cookbook.jpeg"
+                   HeightRequest="300"
                    HorizontalOptions="Fill"
                    Aspect="AspectFill">
                 

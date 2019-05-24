@@ -31,10 +31,10 @@
             <Label x:Name="Recipe" Text="Przepis" Grid.Row="5"></Label>
             <ListView Grid.Row="6" BackgroundColor="Green"></ListView>
 
-            <Button x:Name="Edit" Text="Edytuj"  Grid.Row="7" Grid.Column="0" Clicked="Edit_Clicked"></Button>
-            <Button x:Name="Delete" Text="Usuń"  Grid.Row="7" Grid.Column="1" Clicked="Delete_Clicked"></Button>
-            <Button x:Name="Comments" Text="Komentarze" Grid.Row="8" Clicked="Comments_Clicked"></Button>
-            <Button x:Name="Add" Text="Dodaj"  Grid.Row="9" Clicked="Add_Clicked"></Button>
+            <Button Text="Edytuj"  Grid.Row="7" Grid.Column="0" Clicked="Edit_Clicked"></Button>
+            <Button Text="Usuń"  Grid.Row="7" Grid.Column="1" Clicked="Delete_Clicked"></Button>
+            <Button Text="Komentarze" Grid.Row="8" Clicked="Comments_Clicked"></Button>
+            <Button Text="Dodaj"  Grid.Row="9" Clicked="Add_Clicked"></Button>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

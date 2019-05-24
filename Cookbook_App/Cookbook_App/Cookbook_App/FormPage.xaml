@@ -24,7 +24,7 @@
                 <Label Text="Dodaj zdjęcie" Grid.Row="1" Grid.Column="1" ></Label>
 
                 <Label x:Name="Ingredients" Text="Składniki" Grid.Row="2"></Label>
-                <Entry x:Name="$Ingredient" Grid.Row="3"></Entry>
+                <Entry x:Name="Ingredient" Grid.Row="3"></Entry>
                 <Button x:Name="Add_Next" Text="+" Grid.Row="4"></Button>
 
                 <Label x:Name="Recipe" Text="Przepis" Grid.Row="5"></Label>

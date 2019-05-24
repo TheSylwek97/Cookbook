@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Cookbook_App.Data;
+using Cookbook_App.Interfaces;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +13,13 @@ namespace Cookbook_App
         {
             InitializeComponent();
 
+
+            var fileHelper = DependencyService.Get<IFileHelper>();
+            var fullPath = fileHelper.GetLocalFilepath("app.database");
+
             MainPage = new NavigationPage(new MainPage());
+            var db = new LocalDatabase(fullPath);
+
         }
 
         protected override void OnStart()
@@ -27,7 +35,7 @@ namespace Cookbook_App
         protected override void OnResume()
         {
             // Handle when your app resumes
-        }
+        }/*
         public static ImageSource GetImageByCategory(CategoryDataType cat)
         {
             switch (cat)
@@ -39,6 +47,6 @@ namespace Cookbook_App
                 default:
                     return ImageSource.FormFile("123");
             }
-        }
+        }*/
     }
 }
