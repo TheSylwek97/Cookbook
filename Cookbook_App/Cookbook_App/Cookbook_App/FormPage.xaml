@@ -13,26 +13,52 @@
                 <RowDefinition Height="10"/> <!-- Lab- Recipe-->
                 <RowDefinition Height="30"/> <!-- Text area recipe -->
                 <RowDefinition Height="10"/> <!-- Btn- Add all -->
+                <RowDefinition Height="10"/> <!-- Cat -->
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
         <StackLayout>
-            <Label Text="Dodaj Przepis"></Label>
-                <Entry x:Name="Name" Grid.Row="1" Grid.Column="0" > </Entry>
-                <Label Text="Dodaj zdjęcie" Grid.Row="1" Grid.Column="1" ></Label>
+                <Label Text="Dodaj Przepis"/>
+                <Label x:Name="lblName"  Text="{Binding entryNameOfDish}" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="Dodaj zdjęcie" Grid.Row="1" Grid.Column="1"/>
 
-                <Label x:Name="Ingredients" Text="Składniki" Grid.Row="2"></Label>
-                <Entry x:Name="Ingredient" Grid.Row="3"></Entry>
-                <Button x:Name="Add_Next" Text="+" Grid.Row="4"></Button>
+                <Label x:Name="lblIngredients" Text="Składniki" Grid.Row="2"/>
+                <Entry x:Name="entryIngredient" Grid.Row="3"/>
+                <Button x:Name="Add_Next" Text="+" Grid.Row="4"/>
 
-                <Label x:Name="Recipe" Text="Przepis" Grid.Row="5"></Label>
-                <Entry x:Name="Text_Area" Grid.Row="6"></Entry>
+                <Label x:Name="lblRecipe" Text="Przepis" Grid.Row="5"/>
+                <Entry x:Name="entryRecipe_Text_Area" Grid.Row="6"/>
 
-                <Button x:Name="Add_Recipe" Text="Dodaj przepis" Grid.Row="7"></Button>
+                <Button Text="Dodaj przepis" Grid.Row="7" Clicked="Add_Recipe_Clicked" IsVisible="True" x:Name="btnAdd"/>
+                <Button Text="Usuń" Grid.Row="7"  Clicked="BtnDelete_Clicked" IsVisible="False" x:Name="btnDelete"/>
 
-        </StackLayout>
+                <Label x:Name="lblCategory" Text="Kategoria" Grid.Row="8"/>
+            <AbsoluteLayout>
+                
+            <BoxView x:Name="overlayBusy" 
+                     IsVisible="False" Color="Gray" Opacity="0.3" 
+                     AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0" 
+                     AbsoluteLayout.LayoutFlags="All" />
+                
+                <StackLayout x:Name="stackBusy" 
+                             BackgroundColor="White" 
+                             IsVisible="False" 
+                             AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.6, 0.2" 
+                             AbsoluteLayout.LayoutFlags="All" >
+                    
+                    <ActivityIndicator IsRunning="True" 
+                                       Margin="30" />
+                    
+                    <Label HorizontalTextAlignment="Center" 
+                           Text="Action in progress..." />
+                    
+                </StackLayout>
+                
+            </AbsoluteLayout>
+            </StackLayout>
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>

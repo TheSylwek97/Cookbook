@@ -9,16 +9,17 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="40" />
             </Grid.RowDefinitions>
-            
-            <Label Text="Welcome to Xamarin.Forms!"
+
+            <Label Text="{Binding Category}"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
            <Entry Grid.Row="1" 
-                  x:Name="entryName" 
+                  x:Name="entryNameOfDish" 
                   Placeholder="Name" />
+            
            <Button Grid.Row="2" 
-                   Text="Save New Recpie"
+                   Text="Add New Recpie"
                    Clicked="Button_Clicked"/>
 
         </Grid>

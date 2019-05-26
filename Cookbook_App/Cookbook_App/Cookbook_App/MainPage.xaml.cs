@@ -27,7 +27,7 @@ namespace Cookbook_App
             base.OnAppearing();
             //await RefreshData();
 
-            var recipe = new Recpie()
+            var recipe = new Recipe()
             {
                 Name="test name",
                 Category = CategoryDataType.Soups

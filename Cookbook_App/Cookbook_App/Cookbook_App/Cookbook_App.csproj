@@ -10,6 +10,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\2nd_Dish.jpg" />
+    <None Remove="Images\Dessert.jpg" />
+    <None Remove="Images\Soup.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\2nd_Dish.jpg" />
+    <Content Include="Images\Dessert.jpg" />
+    <Content Include="Images\Soup.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
   </ItemGroup>

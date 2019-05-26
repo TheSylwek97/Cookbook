@@ -14,8 +14,7 @@ namespace Cookbook_App.Data
         public LocalDatabase(string dbPath)
         {
             db = new SQLiteAsyncConnection(dbPath);
-            db.CreateTableAsync<Recpie>().Wait();
-           // db.CreateTableAsync<Teacher>().Wait();
+            db.CreateTableAsync<Recipe>().Wait();
         }
 
         public async Task<int> SaveItem<T>(T item) where T : class, ISqliteModel, new()
@@ -29,9 +28,14 @@ namespace Cookbook_App.Data
 
             return result;
         }
-        public async Task<List<Recpie>> GetRecpies()
+        public async Task<List<Recipe>> GetRecpies()
         {
-            return await db.Table<Recpie>().ToListAsync();
+            return await db.Table<Recipe>().ToListAsync();
         }
+        public async Task<int> DeleteItem<T>(T item) where T : class, ISqliteModel, new()
+        {
+            return await db.DeleteAsync(item);
+        }
+
     }
 }

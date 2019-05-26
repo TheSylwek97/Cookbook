@@ -4,7 +4,7 @@
              x:Class="Cookbook_App.CategoryPage">
     <ContentPage.Content>
         <Grid>
-            
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
@@ -16,8 +16,9 @@
                     Grid.Row="0" 
                     BackgroundColor="DarkGray"
                     Clicked="Soups_Clicked">
-                
+
             </Button>
+            
             <Button x:Name="Main_Courses"
                     Text="Main_Courses"
                     Grid.Row="1" 
