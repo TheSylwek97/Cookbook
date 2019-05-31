@@ -8,7 +8,7 @@
                 <RowDefinition Height="10"/> <!-- Lab- Title -->
                 <RowDefinition Height="20"/> <!-- Name + Add Photo -->
                 <RowDefinition Height="10"/> <!-- Lab-Ingredients-->
-                <RowDefinition Height="20"/> <!-- $Ingredient-->
+                <RowDefinition Height="Auto"/> <!-- $Ingredient-->
                 <RowDefinition Height="10"/> <!-- Btn Add next -->
                 <RowDefinition Height="10"/> <!-- Lab- Recipe-->
                 <RowDefinition Height="30"/> <!-- Text area recipe -->
@@ -21,12 +21,15 @@
             </Grid.ColumnDefinitions>
         <StackLayout>
                 <Label Text="Dodaj Przepis"/>
-                <Label x:Name="lblName"  Text="{Binding entryNameOfDish}" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="entryName"  Text="{Binding entryNameOfDish}" Grid.Row="1" Grid.Column="0"/>
                 <Label Text="Dodaj zdjęcie" Grid.Row="1" Grid.Column="1"/>
 
                 <Label x:Name="lblIngredients" Text="Składniki" Grid.Row="2"/>
-                <Entry x:Name="entryIngredient" Grid.Row="3"/>
-                <Button x:Name="Add_Next" Text="+" Grid.Row="4"/>
+                <StackLayout x:Name="ingList" Grid.Row="3">
+                                <Entry/>
+
+                </StackLayout>
+                <Button x:Name="Add_Next" Text="+" Grid.Row="4" Clicked="Add_Next_Clicked"/>
 
                 <Label x:Name="lblRecipe" Text="Przepis" Grid.Row="5"/>
                 <Entry x:Name="entryRecipe_Text_Area" Grid.Row="6"/>

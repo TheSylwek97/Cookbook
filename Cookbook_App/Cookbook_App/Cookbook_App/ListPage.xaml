@@ -8,19 +8,25 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
             </Grid.RowDefinitions>
-
-            <Label Text="{Binding Category}"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-
-           <Entry Grid.Row="1" 
-                  x:Name="entryNameOfDish" 
-                  Placeholder="Name" />
+            <ListView  Grid.Row="1" 
+                       x:Name="MyListView" 
+                       ItemTapped="MyListView_ItemTapped"
+                        >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
             
-           <Button Grid.Row="2" 
+            <Button Grid.Row="2" 
                    Text="Add New Recpie"
                    Clicked="Button_Clicked"/>
+
+            <Image x:Name="img"
+                   Grid.Row="3"></Image>
 
         </Grid>
     </ContentPage.Content>

@@ -17,19 +17,28 @@ namespace Cookbook_App
 			InitializeComponent ();
 		}
 
-        private async void Soups_Clicked(object sender, EventArgs e)
+        private async void Soups_Clicked(object sender, EventArgs e)//, CategoryDataType category)
         {
-            await Navigation.PushAsync(new ListPage());
+            //category = Soups;
+            await Navigation.PushAsync(new ListPage(CategoryDataType.Soups));
         }
 
         private async void Main_Courses_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ListPage());
+            //ScDish;
+            await Navigation.PushAsync(new ListPage(CategoryDataType.ScDish));
         }
 
         private async void Desserts_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ListPage());
+            //Dessers;
+            await Navigation.PushAsync(new ListPage(CategoryDataType.Dessers));
+        }
+
+        private async void BtnSearch_Clicked(object sender, EventArgs e)
+        {
+            var keyword = entrySearch.Text;
+            var results = await App.LocalDB.GetRecpiesLikeName(keyword); 
         }
     }
 }

@@ -23,8 +23,8 @@ namespace Cookbook_App
 
             if (_recipe != null)
             {
-                //lblName.Text = _recipe.Name;
-                entryIngredient.Text = _recipe.Ingredient;
+                entryName.Text = _recipe.Name;
+                //entryIngredient.Text = _recipe.Ingredient;
                 //entryGrade.Text = _recipe.Grade.ToString();
                 entryRecipe_Text_Area.Text = _recipe.Recipe_Text_Area;
                // categoryForm = _recipe.Category;
@@ -60,10 +60,18 @@ namespace Cookbook_App
 
         private async Task AddNewRecipe()
         {
+            string ingredients = string.Empty;
+            
+            foreach(var x in ingList.Children)
+            {
+                var entry = (Entry)x;
+                ingredients += entry.Text + ";";
+            }
+
             var recipe = new Recipe()
             {
-                //Name = lblName.Text,
-                Ingredient = entryIngredient.Text,
+                Name = entryName.Text,
+                Ingredient = ingredients,
                 Recipe_Text_Area = entryRecipe_Text_Area.Text,
                 //Category = lblCategory.Text
             };
@@ -98,6 +106,11 @@ namespace Cookbook_App
                 await DisplayAlert("Sukces", "Udało się usunąć przepis", "OK");
                 await Navigation.PopAsync();
             }
+        }
+
+        private void Add_Next_Clicked(object sender, EventArgs e)
+        {
+            ingList.Children.Add(new Entry());
         }
     }
 }

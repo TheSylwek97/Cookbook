@@ -9,30 +9,48 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="20"/>
             </Grid.RowDefinitions>
             
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
             <Button x:Name="Soups"
                     Text="Soups"
                     Grid.Row="0" 
-                    BackgroundColor="DarkGray"
-                    Clicked="Soups_Clicked">
+                    Grid.ColumnSpan="2"
+                    Image="Assets/Soup.jpg"
+                    Clicked="Soups_Clicked"/>
 
-            </Button>
-            
+
+
             <Button x:Name="Main_Courses"
                     Text="Main_Courses"
                     Grid.Row="1" 
-                    BackgroundColor="Gray"
+                    Grid.ColumnSpan="2"
+                    Image="Assets/2nd_Dish.jpg"
                     Clicked="Main_Courses_Clicked">
 
             </Button>
             <Button x:Name="Desserts"
                     Text="Desserts"
                     Grid.Row="2" 
-                    BackgroundColor="LightGray"
+                    Grid.ColumnSpan="2"
+                    Image="Assets/Dessert.jpg"
                     Clicked="Desserts_Clicked">
 
             </Button>
+            <Button x:Name="btnSearch"
+                    Text="Szukaj..."
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Clicked="BtnSearch_Clicked"/>
+
+            <Entry x:Name="entrySearch"
+                   Grid.Row="3"
+                   Grid.Column="0"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -37,5 +37,11 @@ namespace Cookbook_App.Data
             return await db.DeleteAsync(item);
         }
 
+        public async Task<List<Recipe>> GetRecpiesLikeName(string name)
+        {
+            return await db.Table<Recipe>().Where(x => x.Name.Contains(name)).ToListAsync();
+
+        }
+
     }
 }
