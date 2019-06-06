@@ -7,34 +7,36 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="20"/>
                 <RowDefinition Height="40"/>
-                <RowDefinition Height="10"/>
-                <RowDefinition Height="10"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="10"/>
+                <RowDefinition Height="40"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="5"/>
-                <RowDefinition Height="5"/>
-                <RowDefinition Height="5"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
-            <Label x:Name="Title" Text="" BackgroundColor="Green"></Label>
-            <Image Grid.Row="1"></Image>
-            <Label x:Name="Rating" Grid.Row="2" BackgroundColor="Green" > </Label>
 
-            <Label x:Name="Ingredients" Text="Składniki" Grid.Row="3"></Label>
-            <ListView Grid.Row="4" BackgroundColor="Green"></ListView>
+            <Label x:Name="Title" Text="{Binding Name}" />
+            <Image Grid.Row="1"/>
+            <Label x:Name="Rating" Grid.Row="2" BackgroundColor="Green" />
 
-            <Label x:Name="Recipe" Text="Przepis" Grid.Row="5"></Label>
-            <ListView Grid.Row="6" BackgroundColor="Green"></ListView>
+            <Label x:Name="Ingredients" Text="Składniki" Grid.Row="3"/>
+            <ListView Grid.Row="4" BackgroundColor="Green"> 
+                
+            </ListView>
 
-            <Button Text="Edytuj"  Grid.Row="7" Grid.Column="0" Clicked="Edit_Clicked"></Button>
-            <Button Text="Usuń"  Grid.Row="7" Grid.Column="1" Clicked="Delete_Clicked"></Button>
-            <Button Text="Komentarze" Grid.Row="8" Clicked="Comments_Clicked"></Button>
-            <Button Text="Dodaj"  Grid.Row="9" Clicked="Add_Clicked"></Button>
+            <Label x:Name="Recipe" Text="Przepis" Grid.Row="5"/>
+            <Label Grid.Row="6" Text="{Binding Recipe_Text_Area}"/>
+
+            <Button Text="Edytuj"  Grid.Row="7" Grid.Column="0" Clicked="Edit_Clicked"/>
+            <Button Text="Usuń"  Grid.Row="7" Grid.Column="1" Clicked="Delete_Clicked"/>
+            <Image x:Name="imgRate"/>
+            <Button Text="Dodaj"  Grid.Row="9" Clicked="Add_Clicked"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cookbook_App.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,17 @@ namespace Cookbook_App
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class DetailPage : ContentPage
 	{
-		public DetailPage ()
+        private bool _isSelectable;
+        private List<Recipe> _recipesSelected;
+        private List<Recipe> _recipes;
+
+
+        public DetailPage (Recipe _recipe)
 		{
-			InitializeComponent ();
+            _recipesSelected = new List<Recipe>();
+            _recipes = new List<Recipe>();
+            _isSelectable = false;
+            InitializeComponent ();
 		}
 
         private void Edit_Clicked(object sender, EventArgs e)
@@ -26,11 +35,7 @@ namespace Cookbook_App
         {
 
         }
-
-        private void Comments_Clicked(object sender, EventArgs e)
-        {
-
-        }
+        //switch(recipeId.Rate)
 
         private void Add_Clicked(object sender, EventArgs e)
         {

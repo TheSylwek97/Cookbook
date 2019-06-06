@@ -14,10 +14,10 @@ namespace Cookbook_App
 	public partial class ListPage : ContentPage
 	{
         private Recipe _recipe;
-        private CategoryDataType _cat;
+        //private CategoryDataType _cat;
         public ListPage(CategoryDataType category)
 		{
-            _cat = category;
+            //_cat = category;
 			InitializeComponent ();
             switch (category)
             {
@@ -54,8 +54,9 @@ namespace Cookbook_App
         private async void MyListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
            var recp = e.Item as Recipe;
-           await DisplayAlert(recp.Name, $"Przepis zawiera: {recp.Recipe_Text_Area} oraz skł: {recp.Ingredient}", "OK");
-
+            //await DisplayAlert(recp.Name, $"Przepis zawiera: {recp.Recipe_Text_Area} oraz skł: {recp.Ingredient}", "OK");
+            //await Navigation.PushAsync(new DetailPage(recp.ID));
+            await Navigation.PushAsync(new DetailPage(_recipe));
         }
     }
 }

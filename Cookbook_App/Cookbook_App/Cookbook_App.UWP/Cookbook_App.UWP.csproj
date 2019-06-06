@@ -109,6 +109,12 @@
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
     <Content Include="Assets\LargeTile.scale-400.png" />
+    <Content Include="Assets\r0.png" />
+    <Content Include="Assets\r1.png" />
+    <Content Include="Assets\r2.png" />
+    <Content Include="Assets\r3.png" />
+    <Content Include="Assets\r4.png" />
+    <Content Include="Assets\r5.png" />
     <Content Include="Assets\SmallTile.scale-100.png" />
     <Content Include="Assets\SmallTile.scale-200.png" />
     <Content Include="Assets\SmallTile.scale-400.png" />

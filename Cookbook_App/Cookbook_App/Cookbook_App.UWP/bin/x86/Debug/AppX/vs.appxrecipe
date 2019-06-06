@@ -30,13 +30,17 @@
     <AppXManifest Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-31T08:39:29.865</Modified>
+      <Modified>2019-06-06T21:11:37.312</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\bin\x86\Debug\Cookbook_App.UWP.exe">
       <PackagePath>entrypoint\Cookbook_App.UWP.exe</PackagePath>
-      <Modified>2019-05-31T08:39:28.641</Modified>
+      <Modified>2019-06-06T21:11:35.512</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\.nuget\packages\plugin.permissions\3.0.0.12\lib\uap10.0.10240\Plugin.Permissions.dll">
+      <PackagePath>Plugin.Permissions.dll</PackagePath>
+      <Modified>2018-05-15T23:38:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.5\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -718,6 +722,10 @@
       <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
       <Modified>2018-05-02T09:44:20.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\.nuget\packages\xam.plugin.media\4.0.1.5\lib\uap10.0.10240\Plugin.Media.dll">
+      <PackagePath>Plugin.Media.dll</PackagePath>
+      <Modified>2018-07-23T18:55:22.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\.nuget\packages\xamarin.forms\3.4.0.1008975\lib\uap10.0\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
       <Modified>2018-11-13T19:15:30.000</Modified>
@@ -736,7 +744,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\bin\Debug\netstandard2.0\Cookbook_App.dll">
       <PackagePath>Cookbook_App.dll</PackagePath>
-      <Modified>2019-05-31T08:39:19.524</Modified>
+      <Modified>2019-06-06T21:11:25.018</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -768,6 +776,30 @@
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-05-20T21:02:10.632</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\r0.png">
+      <PackagePath>Assets\r0.png</PackagePath>
+      <Modified>2019-06-06T20:29:53.259</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\r1.png">
+      <PackagePath>Assets\r1.png</PackagePath>
+      <Modified>2019-06-06T20:30:08.637</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\r2.png">
+      <PackagePath>Assets\r2.png</PackagePath>
+      <Modified>2019-06-06T20:30:24.888</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\r3.png">
+      <PackagePath>Assets\r3.png</PackagePath>
+      <Modified>2019-06-06T20:30:50.666</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\r4.png">
+      <PackagePath>Assets\r4.png</PackagePath>
+      <Modified>2019-06-06T20:31:05.152</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\r5.png">
+      <PackagePath>Assets\r5.png</PackagePath>
+      <Modified>2019-06-06T20:31:20.075</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
@@ -903,11 +935,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-05-31T08:39:28.290</Modified>
+      <Modified>2019-06-06T21:11:35.023</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-05-31T08:39:28.291</Modified>
+      <Modified>2019-06-06T21:11:35.023</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -919,11 +951,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-05-24T19:29:41.672</Modified>
+      <Modified>2019-06-06T21:00:45.909</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\bin\x86\Debug\Core\Cookbook_App.UWP.exe">
       <PackagePath>Cookbook_App.UWP.exe</PackagePath>
-      <Modified>2019-05-31T08:39:29.855</Modified>
+      <Modified>2019-06-06T21:11:37.298</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

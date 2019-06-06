@@ -39,5 +39,8 @@ namespace Cookbook_App
             await DisplayAlert("ok", $"Liczba rek w db {recpies.Count}", "ok");
 
         }
+        
+
+
     }
 }

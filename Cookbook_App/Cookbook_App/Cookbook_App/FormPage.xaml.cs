@@ -24,6 +24,7 @@ namespace Cookbook_App
             if (_recipe != null)
             {
                 entryName.Text = _recipe.Name;
+                entryRate.Text = _recipe.Rate.ToString();
                 //entryIngredient.Text = _recipe.Ingredient;
                 //entryGrade.Text = _recipe.Grade.ToString();
                 entryRecipe_Text_Area.Text = _recipe.Recipe_Text_Area;
@@ -71,6 +72,7 @@ namespace Cookbook_App
             var recipe = new Recipe()
             {
                 Name = entryName.Text,
+                Rate = int.Parse(entryRate.Text),
                 Ingredient = ingredients,
                 Recipe_Text_Area = entryRecipe_Text_Area.Text,
                 //Category = lblCategory.Text

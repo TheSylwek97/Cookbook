@@ -28,6 +28,9 @@
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\bin\x86\Debug\Cookbook_App.UWP.exe">
       <PackagePath>entrypoint\Cookbook_App.UWP.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\.nuget\packages\plugin.permissions\3.0.0.12\lib\uap10.0.10240\Plugin.Permissions.dll">
+      <PackagePath>Plugin.Permissions.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.5\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
     </AppxPackagedFile>
@@ -538,6 +541,9 @@
     <AppxPackagedFile Include="C:\Users\Sylwia\.nuget\packages\sqlitepclraw.provider.e_sqlite3.uwp10\1.1.11\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
       <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\.nuget\packages\xam.plugin.media\4.0.1.5\lib\uap10.0.10240\Plugin.Media.dll">
+      <PackagePath>Plugin.Media.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\.nuget\packages\xamarin.forms\3.4.0.1008975\lib\uap10.0\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
     </AppxPackagedFile>
@@ -576,6 +582,24 @@
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\r0.png">
+      <PackagePath>Assets\r0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\r1.png">
+      <PackagePath>Assets\r1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\r2.png">
+      <PackagePath>Assets\r2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\r3.png">
+      <PackagePath>Assets\r3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\r4.png">
+      <PackagePath>Assets\r4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\r5.png">
+      <PackagePath>Assets\r5.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
