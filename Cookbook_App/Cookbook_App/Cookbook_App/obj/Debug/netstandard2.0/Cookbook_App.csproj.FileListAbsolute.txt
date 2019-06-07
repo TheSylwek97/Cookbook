@@ -14,3 +14,4 @@ C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\ob
 C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\DetailPage.xaml.g.cs
 C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\FormPage.xaml.g.cs
 C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\ViewModel\RecipeListViewPage.xaml.g.cs

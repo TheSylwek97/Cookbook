@@ -1,4 +1,5 @@
 ﻿using Cookbook_App.Model;
+using Cookbook_App.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -56,7 +57,7 @@ namespace Cookbook_App
            var recp = e.Item as Recipe;
             //await DisplayAlert(recp.Name, $"Przepis zawiera: {recp.Recipe_Text_Area} oraz skł: {recp.Ingredient}", "OK");
             //await Navigation.PushAsync(new DetailPage(recp.ID));
-            await Navigation.PushAsync(new DetailPage(_recipe));
+            await Navigation.PushAsync(new RecipeListViewPage(recp));
         }
     }
 }

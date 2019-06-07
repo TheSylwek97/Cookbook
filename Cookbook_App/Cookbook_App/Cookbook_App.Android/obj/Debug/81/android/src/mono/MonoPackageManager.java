@@ -108,6 +108,9 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "Cookbook_App.Android.dll" comes first in this list. */
 		"Cookbook_App.dll",
 		"FormsViewGroup.dll",
+		"Plugin.CurrentActivity.dll",
+		"Plugin.Media.dll",
+		"Plugin.Permissions.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_green.dll",
 		"SQLitePCLRaw.batteries_v2.dll",

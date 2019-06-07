@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cookbook_App.ViewModel.RecipeListViewPage">
+    <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="45" />
+                <RowDefinition Height="45" />
+            </Grid.RowDefinitions>
+        <Label Text="ListView"/>
+        <Image x:Name="imgRecp"/>
+
+        <ListView Grid.Row="0" x:Name="ListView" 
+                        ItemTapped="Handle_ItemTapped">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" />
+                </DataTemplate>
+                    
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="btnAddNew" Grid.Row="1" Text="Dodaj nowy przepis" Clicked="BtnAddNew_Clicked"/>
+            <Button x:Name="btnRemove" Grid.Row="2" Text="Usuń przepis" Clicked="BtnRemove_Clicked"/>
+        </Grid>
+    </ContentPage>
