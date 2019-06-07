@@ -15,6 +15,7 @@ namespace Cookbook_App
 	public partial class FormPage : ContentPage
 	{
         private Recipe _recipe;
+        string pathToFile;
         public FormPage (Recipe recipe = null)
 		{
 			InitializeComponent ();
@@ -30,35 +31,14 @@ namespace Cookbook_App
                 //entryGrade.Text = _recipe.Grade.ToString();
                 entryRecipe_Text_Area.Text = _recipe.Recipe_Text_Area;
                // categoryForm = _recipe.Category;
-                btnDelete.IsVisible = true;
+                //btnDelete.IsVisible = true;
                 btnAdd.IsVisible = false;
             }
         }
-        
+        /*
         private async void Add_Recipe_Clicked(object sender, EventArgs e)
         {
-            overlayBusy.IsVisible = true;
-            stackBusy.IsVisible = true;
-            await AddNewRecipe();
-            overlayBusy.IsVisible = false;
-            stackBusy.IsVisible = false;
-            /*
-            if (string.IsNullOrWhiteSpace(entryName.Text) 
-                || string.IsNullOrWhiteSpace(entryIngredient.Text) 
-                || string.IsNullOrWhiteSpace(entryRecipe_Text_Area.Text))
-            {
-                await DisplayAlert("Błąd!", "Proszę wprowadzić dane", "OK");
-                return;
-            }
-
-            Data.Properties.AppProperties["nameOfDish"] = entryName.Text;
-            Data.Properties.AppProperties["ingredientOfDish"] = entryIngredient.Text;
-            Data.Properties.AppProperties["recipeOfDish"] = entryRecipe_Text_Area.Text;
-
-            await Application.Current.SavePropertiesAsync();
-            ClearFields();
-            */
-        }
+        }*/
 
         private async Task AddNewRecipe()
         {
@@ -76,6 +56,7 @@ namespace Cookbook_App
                 Rate = int.Parse(entryRate.Text),
                 Ingredient = ingredients,
                 Recipe_Text_Area = entryRecipe_Text_Area.Text,
+                FilePath = pathToFile,
                 //Category = lblCategory.Text
             };
 
@@ -135,13 +116,19 @@ namespace Cookbook_App
             if (file == null)
                 return;
 
-            await DisplayAlert("File Location", file.Path, "OK");
+            //await DisplayAlert("File Location", file.Path, "OK");
+            pathToFile = file.Path;
 
             image.Source = ImageSource.FromStream(() =>
             {
                 var stream = file.GetStream();
                 return stream;
             });
+        }
+
+        private void Add_Recipe_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }

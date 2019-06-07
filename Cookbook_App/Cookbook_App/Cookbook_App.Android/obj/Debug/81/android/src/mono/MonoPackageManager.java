@@ -106,6 +106,7 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "Cookbook_App.Android.dll" comes first in this list. */
+		"Cookbook_App.Android.dll",
 		"Cookbook_App.dll",
 		"FormsViewGroup.dll",
 		"Plugin.CurrentActivity.dll",

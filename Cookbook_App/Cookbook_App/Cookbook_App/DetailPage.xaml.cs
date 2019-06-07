@@ -13,7 +13,7 @@ namespace Cookbook_App
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class DetailPage : ContentPage
 	{
-        private bool _isSelectable;
+        //private bool _isSelectable;
         private List<Recipe> _recipesSelected;
         private List<Recipe> _recipes;
 
@@ -22,8 +22,9 @@ namespace Cookbook_App
 		{
             _recipesSelected = new List<Recipe>();
             _recipes = new List<Recipe>();
-            _isSelectable = false;
+            //isSelectable = false;
             InitializeComponent ();
+            BindingContext = _recipe;
 		}
 
         private void Edit_Clicked(object sender, EventArgs e)
@@ -37,9 +38,11 @@ namespace Cookbook_App
         }
         //switch(recipeId.Rate)
 
-        private void Add_Clicked(object sender, EventArgs e)
+        private async void Add_Clicked(object sender, EventArgs e)
         {
+            await Xamarin.Essentials.Share.RequestAsync("tresc", "send");
 
         }
+
     }
 }

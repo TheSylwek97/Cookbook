@@ -57,7 +57,7 @@ namespace Cookbook_App
            var recp = e.Item as Recipe;
             //await DisplayAlert(recp.Name, $"Przepis zawiera: {recp.Recipe_Text_Area} oraz skł: {recp.Ingredient}", "OK");
             //await Navigation.PushAsync(new DetailPage(recp.ID));
-            await Navigation.PushAsync(new RecipeListViewPage(recp));
+            await Navigation.PushAsync(new DetailPage(recp));
         }
     }
 }

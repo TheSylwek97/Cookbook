@@ -5,24 +5,26 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="10"/> <!-- Lab- Title -->
-                <RowDefinition Height="20"/> <!-- Name + Add Photo -->
-                <RowDefinition Height="10"/> <!-- Lab-Ingredients-->
+                <RowDefinition Height="40"/> <!-- Lab- Title -->
+                <RowDefinition Height="50"/> <!-- Name + Add Photo -->
+                <RowDefinition Height="40"/> <!-- Lab-Ingredients-->
                 <RowDefinition Height="Auto"/> <!-- $Ingredient-->
-                <RowDefinition Height="10"/> <!-- Btn Add next -->
-                <RowDefinition Height="10"/> <!-- Lab- Recipe-->
-                <RowDefinition Height="30"/> <!-- Text area recipe -->
-                <RowDefinition Height="10"/> <!-- Btn- Add all -->
-                <RowDefinition Height="10"/> <!-- Cat -->
+                <RowDefinition Height="40"/> <!-- Btn Add next -->
+                <RowDefinition Height="40"/> <!-- Lab- Recipe-->
+                <RowDefinition Height="50"/> <!-- Text area recipe -->
+                <RowDefinition Height="40"/> <!-- Btn- Add all -->
+                <RowDefinition Height="40"/> <!-- Cat -->
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-        <StackLayout>
+            
                 <Label Text="Dodaj Przepis"/>
                 <Entry x:Name="entryName"  Text="{Binding entryNameOfDish}" Grid.Row="1" Grid.Column="0"/>
-                <Label Text="Dodaj zdjęcie" Grid.Row="1" Grid.Column="1"/>
+                <Button x:Name="btnTakePho" Text="Zrób zdj" Clicked="BtnTakePho_Clicked" Grid.Row="1" Grid.Column="1"/>
+
+                <Image x:Name="image"/>
 
                 <Label x:Name="lblIngredients" Text="Składniki" Grid.Row="2"/>
                 <StackLayout x:Name="ingList" Grid.Row="3">
@@ -33,37 +35,12 @@
                 <Label x:Name="lblRecipe" Text="Przepis" Grid.Row="5"/>
                 <Entry x:Name="entryRecipe_Text_Area" Grid.Row="6"/>
 
-                <Button Text="Dodaj przepis" Grid.Row="7" Clicked="Add_Recipe_Clicked" IsVisible="True" x:Name="btnAdd"/>
-                <Button Text="Usuń" Grid.Row="7"  Clicked="BtnDelete_Clicked" IsVisible="False" x:Name="btnDelete"/>
+                <Button Text="Dodaj przepis" Grid.Row="7" Clicked="Add_Recipe_Clicked" x:Name="btnAdd"/>
 
                 <Entry x:Name="entryRate"  Keyboard="Numeric" />
 
-                <Button x:Name="btnTakePho" Text="Zrób zdj" Clicked="BtnTakePho_Clicked"/>
-                <Image x:Name="image"/>
                 <Label x:Name="lblCategory" Text="Kategoria" Grid.Row="8"/>
-            <AbsoluteLayout>
-                
-            <BoxView x:Name="overlayBusy" 
-                     IsVisible="False" Color="Gray" Opacity="0.3" 
-                     AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0" 
-                     AbsoluteLayout.LayoutFlags="All" />
-                
-                <StackLayout x:Name="stackBusy" 
-                             BackgroundColor="White" 
-                             IsVisible="False" 
-                             AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.6, 0.2" 
-                             AbsoluteLayout.LayoutFlags="All" >
-                    
-                    <ActivityIndicator IsRunning="True" 
-                                       Margin="30" />
-                    
-                    <Label HorizontalTextAlignment="Center" 
-                           Text="Action in progress..." />
-                    
-                </StackLayout>
-                
-            </AbsoluteLayout>
-            </StackLayout>
+           
 
         </Grid>
     </ContentPage.Content>

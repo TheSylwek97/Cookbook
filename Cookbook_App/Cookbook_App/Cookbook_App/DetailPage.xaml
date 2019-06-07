@@ -36,7 +36,7 @@
             <Button Text="Edytuj"  Grid.Row="7" Grid.Column="0" Clicked="Edit_Clicked"/>
             <Button Text="Usuń"  Grid.Row="7" Grid.Column="1" Clicked="Delete_Clicked"/>
             <Image x:Name="imgRate"/>
-            <Button Text="Dodaj"  Grid.Row="9" Clicked="Add_Clicked"/>
+            <Button Text="Wyślij email"  Grid.Row="9" Clicked="Add_Clicked"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
