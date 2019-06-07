@@ -1,4 +1,5 @@
 ﻿using Cookbook_App.Model;
+using Plugin.Media;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -113,6 +114,34 @@ namespace Cookbook_App
         private void Add_Next_Clicked(object sender, EventArgs e)
         {
             ingList.Children.Add(new Entry());
+        }
+
+        private async void BtnTakePho_Clicked(object sender, EventArgs e)
+        {
+            await CrossMedia.Current.Initialize();
+
+            if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
+            {
+                await DisplayAlert("No Camera", ":( No camera available.", "OK");
+                return;
+            }
+
+            var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
+            {
+                Directory = "Sample",
+                Name = "test.jpg"
+            });
+
+            if (file == null)
+                return;
+
+            await DisplayAlert("File Location", file.Path, "OK");
+
+            image.Source = ImageSource.FromStream(() =>
+            {
+                var stream = file.GetStream();
+                return stream;
+            });
         }
     }
 }

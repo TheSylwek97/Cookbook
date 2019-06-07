@@ -1066,6 +1066,7 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v8.1": [
       "Cookbook_App >= 1.0.0",
+      "Xam.Plugin.Media >= 4.0.1.5",
       "Xamarin.Android.Support.Design >= 27.0.2.1",
       "Xamarin.Android.Support.v4 >= 27.0.2.1",
       "Xamarin.Android.Support.v7.AppCompat >= 27.0.2.1",
@@ -1111,6 +1112,10 @@
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
+          "Xam.Plugin.Media": {
+            "target": "Package",
+            "version": "[4.0.1.5, )"
+          },
           "Xamarin.Android.Support.Design": {
             "target": "Package",
             "version": "[27.0.2.1, )"

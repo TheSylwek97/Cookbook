@@ -37,7 +37,9 @@
                 <Button Text="Usuń" Grid.Row="7"  Clicked="BtnDelete_Clicked" IsVisible="False" x:Name="btnDelete"/>
 
                 <Entry x:Name="entryRate"  Keyboard="Numeric" />
-            
+
+                <Button x:Name="btnTakePho" Text="Zrób zdj" Clicked="BtnTakePho_Clicked"/>
+                <Image x:Name="image"/>
                 <Label x:Name="lblCategory" Text="Kategoria" Grid.Row="8"/>
             <AbsoluteLayout>
                 
