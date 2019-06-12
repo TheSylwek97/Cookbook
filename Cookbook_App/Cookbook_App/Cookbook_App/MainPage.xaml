@@ -18,13 +18,8 @@
                    HeightRequest="300"
                    HorizontalOptions="Fill"
                    Aspect="AspectFill">
-                
+
             </Image>
-            <!-- <Label Text="Cookbook" 
-                   HorizontalOptions="Center"
-                   VerticalOptions="CenterAndExpand"
-                   />-->
-            
             <Button Text="Tap to start" 
                     Clicked="Button_Clicked" 
                     Grid.Row="1" 

@@ -11,15 +11,16 @@ using Xamarin.Forms.Xaml;
 
 namespace Cookbook_App
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ListPage : ContentPage
-	{
-        private Recipe _recipe;
-        //private CategoryDataType _cat;
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class ListPage : ContentPage
+    {
+        private CategoryDataType _Category;
+        private bool _isSelectable;
+        private List<Recipe> _recipesSelected;
+        private List<Recipe> _recipes;
+
         public ListPage(CategoryDataType category)
-		{
-            //_cat = category;
-			InitializeComponent ();
+        {
             switch (category)
             {
                 case CategoryDataType.ScDish:
@@ -33,11 +34,18 @@ namespace Cookbook_App
                     break;
 
             }
+
+            _recipesSelected = new List<Recipe>();
+            _recipes = new List<Recipe>();
+            _isSelectable = false;
+            _Category = category;
+
+            InitializeComponent();
+
         }
-        //konstruktor ze listą znalezionych przepisów parametr listPage list of recipe = do wyświetlenia jako mylistviwe 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private async void NewRcp_Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new FormPage());
+            await Navigation.PushAsync(new FormPage(_Category));
         }
         protected override async void OnAppearing()
         {
@@ -46,18 +54,80 @@ namespace Cookbook_App
         }
         private async Task RefreshData()
         {
-            //_recipe = await App.LocalDB.GetRecpies<Recipe>();
-            //MyListView.ItemsSource = _recipe;
-            var recpies = await App.LocalDB.GetRecpies();
-            MyListView.ItemsSource = recpies;
+            _recipes = await App.LocalDB.GetRecpies();
+            MyListView.ItemsSource = _recipes;
         }
 
         private async void MyListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-           var recp = e.Item as Recipe;
+            var recp = e.Item as Recipe;
             //await DisplayAlert(recp.Name, $"Przepis zawiera: {recp.Recipe_Text_Area} oraz skł: {recp.Ingredient}", "OK");
             //await Navigation.PushAsync(new DetailPage(recp.ID));
             await Navigation.PushAsync(new DetailPage(recp));
+        }
+
+        private async void BtnDeletle_Clicked(object sender, EventArgs e)
+        {
+            if (_isSelectable)
+            {
+                if (_recipesSelected.Any())
+                {
+
+                    foreach (var r in _recipesSelected)
+                    {
+                        //var answer = await DisplayAlert("Usuń przepis", "Czy na pewno chcesz usunąć ten przepis?", "Tak", "Nie");
+                        // if (answer)
+                        // {
+                        await App.LocalDB.DeleteItem(r);
+                        // }
+                    }
+
+                    _recipesSelected.Clear();
+                    await DisplayAlert(" ", "Usunięto przepisy z bazy", "OK");
+                    await RefreshData();
+                }
+            }
+
+            _isSelectable = !_isSelectable;
+            BtnDeletle.Text = _isSelectable ? "Zaznacz przepis" : "Odznacz przepis";
+        }
+    
+        async  void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            if (e.Item == null)
+                return;
+
+            var recp = e.Item as Recipe;
+
+            if (!_isSelectable)
+            {
+                if (await DisplayAlert($"{recp.Name}", $"Czy przejść do edycji?", "Tak", "Nie"))
+                {
+                    await Navigation.PushAsync(new FormPage(recp));
+
+                    //Deselect Item
+                    ((ListView)sender).SelectedItem = null;
+                }
+            }
+            else
+            {
+                if (_recipesSelected.Contains(recp))
+                {
+                    _recipesSelected.Remove(recp);
+                    var name = recp.Name.Remove(0, 2);
+                    _recipes.Where(s => s.ID == recp.ID).First().Name = name;
+                }
+                else
+                {
+                    var recipesSelected = _recipes.Where(s => s.ID == recp.ID).First();
+                    recipesSelected.Name = "X " + recp.Name;
+                    _recipesSelected.Add(recipesSelected);
+                }
+
+                MyListView.ItemsSource = null;
+                MyListView.ItemsSource = _recipes;
+                BtnDeletle.Text = $"Remove students ({_recipesSelected.Count})";
+            }
         }
     }
 }

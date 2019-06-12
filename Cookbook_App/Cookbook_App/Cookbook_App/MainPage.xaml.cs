@@ -21,12 +21,12 @@ namespace Cookbook_App
         {
             await Navigation.PushAsync(new CategoryPage());
         }
-
-        protected override async void OnAppearing()
+        /*
+        protected override async void OnAppearing() //For testing
         {
             base.OnAppearing();
             //await RefreshData();
-
+            
             var recipe = new Recipe()
             {
                 Name="test name",
@@ -37,9 +37,9 @@ namespace Cookbook_App
             var recpies = await App.LocalDB.GetRecpies();
 
             await DisplayAlert("ok", $"Liczba rek w db {recpies.Count}", "ok");
+            
+        }*/
 
-        }
-        
 
 
     }

@@ -34,9 +34,8 @@
             <Label Grid.Row="6" Text="{Binding Recipe_Text_Area}"/>
 
             <Button Text="Edytuj"  Grid.Row="7" Grid.Column="0" Clicked="Edit_Clicked"/>
-            <Button Text="Usuń"  Grid.Row="7" Grid.Column="1" Clicked="Delete_Clicked"/>
-            <Image x:Name="imgRate"/>
-            <Button Text="Wyślij email"  Grid.Row="9" Clicked="Add_Clicked"/>
+            <Button Text="Wyślij email"   Grid.Row="7" Grid.Column="1" Clicked="Add_Clicked"/>
+            <Image x:Name="imgRate" Grid.Row="8" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -17,7 +17,6 @@ namespace Cookbook_App
         private List<Recipe> _recipesSelected;
         private List<Recipe> _recipes;
 
-
         public DetailPage (Recipe _recipe)
 		{
             _recipesSelected = new List<Recipe>();
@@ -25,17 +24,30 @@ namespace Cookbook_App
             //isSelectable = false;
             InitializeComponent ();
             BindingContext = _recipe;
-		}
 
-        private void Edit_Clicked(object sender, EventArgs e)
-        {
+            /*int r = int.Parse(entryRate.Text);
+    switch (r)
+    {
+        case r = 1:
+            img.Source = ImageSource.FromFile("Assets/2nd_Dish.jpg");
+            break;
+        case r.2:
+            img.Source = ImageSource.FromFile("Assets/Dessers.jpg");
+            break;
+        default:
+            img.Source = ImageSource.FromFile("Assets/Soups.jpg");
+            break;
 
+    }*/
         }
 
-        private void Delete_Clicked(object sender, EventArgs e)
-        {
 
+        private async void Edit_Clicked(object sender, EventArgs e)
+        {
+           
         }
+
+        
         //switch(recipeId.Rate)
 
         private async void Add_Clicked(object sender, EventArgs e)

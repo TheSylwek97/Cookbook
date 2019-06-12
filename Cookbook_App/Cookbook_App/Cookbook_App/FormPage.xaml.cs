@@ -16,29 +16,28 @@ namespace Cookbook_App
 	{
         private Recipe _recipe;
         string pathToFile;
+        private CategoryDataType _category;
         public FormPage (Recipe recipe = null)
 		{
 			InitializeComponent ();
             _recipe = recipe;
-            //lblCategory.Text = $"Teacher: {_recipe.Category}";
-            //CategoryDataType categoryForm;
 
+            
             if (_recipe != null)
             {
                 entryName.Text = _recipe.Name;
                 entryRate.Text = _recipe.Rate.ToString();
-                //entryIngredient.Text = _recipe.Ingredient;
-                //entryGrade.Text = _recipe.Grade.ToString();
+                oneEntOfIngList.Text = _recipe.Ingredient;
                 entryRecipe_Text_Area.Text = _recipe.Recipe_Text_Area;
-               // categoryForm = _recipe.Category;
-                //btnDelete.IsVisible = true;
-                btnAdd.IsVisible = false;
+                _category = _recipe.Category;
             }
         }
-        /*
-        private async void Add_Recipe_Clicked(object sender, EventArgs e)
+
+        public FormPage(CategoryDataType category)//, Rate rattig)
         {
-        }*/
+            _category = category;
+    
+        }
 
         private async Task AddNewRecipe()
         {
@@ -47,7 +46,7 @@ namespace Cookbook_App
             foreach(var x in ingList.Children)
             {
                 var entry = (Entry)x;
-                ingredients += entry.Text + ";";
+                ingredients += entry.Text + "; ";
             }
 
             var recipe = new Recipe()
@@ -57,7 +56,7 @@ namespace Cookbook_App
                 Ingredient = ingredients,
                 Recipe_Text_Area = entryRecipe_Text_Area.Text,
                 FilePath = pathToFile,
-                //Category = lblCategory.Text
+                Category = _category
             };
 
             if (_recipe != null)
@@ -66,32 +65,10 @@ namespace Cookbook_App
             }
 
             await App.LocalDB.SaveItem(recipe);
-            await DisplayAlert("Sukces", "Zapis powiódł się", "OK");
+            await DisplayAlert("Sukces", "Przepis został dodany do bazy", "Ok");
             await Navigation.PopAsync();
-        }/*
-        private void ClearFields()
-        {
-            entryName.Text = string.Empty;
-            entryIngredient.Text = string.Empty;
-            entryRecipe_Text_Area.Text = string.Empty;
         }
-        */
-
-        private async void BtnDelete_Clicked(object sender, EventArgs e)
-        {
-            await DeleteRecipe();
-        }
-
-        private async Task DeleteRecipe()
-        {
-            if (_recipe != null)
-            {
-                await App.LocalDB.DeleteItem(_recipe);
-                await DisplayAlert("Sukces", "Udało się usunąć przepis", "OK");
-                await Navigation.PopAsync();
-            }
-        }
-
+        
         private void Add_Next_Clicked(object sender, EventArgs e)
         {
             ingList.Children.Add(new Entry());
@@ -103,7 +80,7 @@ namespace Cookbook_App
 
             if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
             {
-                await DisplayAlert("No Camera", ":( No camera available.", "OK");
+                await DisplayAlert("Aparat niedostępny", ":(Brak dostępu do aplikacji Aparat.", "Ok");
                 return;
             }
 
@@ -126,9 +103,9 @@ namespace Cookbook_App
             });
         }
 
-        private void Add_Recipe_Clicked(object sender, EventArgs e)
+        private async void Add_Recipe_Clicked(object sender, EventArgs e)
         {
-
+            await AddNewRecipe();
         }
     }
 }

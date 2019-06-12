@@ -14,33 +14,33 @@
                 <RowDefinition Height="50"/> <!-- Text area recipe -->
                 <RowDefinition Height="40"/> <!-- Btn- Add all -->
                 <RowDefinition Height="40"/> <!-- Cat -->
+                <RowDefinition Height="40"/> <!-- Cat -->
+                <RowDefinition Height="40"/> <!-- Cat -->
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             
-                <Label Text="Dodaj Przepis"/>
-                <Entry x:Name="entryName"  Text="{Binding entryNameOfDish}" Grid.Row="1" Grid.Column="0"/>
-                <Button x:Name="btnTakePho" Text="Zrób zdj" Clicked="BtnTakePho_Clicked" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Dodaj Przepis" Grid.ColumnSpan="2"/>
+                <Entry x:Name="entryName"  Placeholder="Nazwa" Grid.Row="1" Grid.Column="0"/>
+                <Button x:Name="btnTakePho" Text="Zrób zdjęcie" Clicked="BtnTakePho_Clicked" Grid.Row="1" Grid.Column="1"/>
 
-                <Image x:Name="image"/>
+                <Image x:Name="image" Grid.Row="2" Grid.ColumnSpan="2"/>
 
-                <Label x:Name="lblIngredients" Text="Składniki" Grid.Row="2"/>
-                <StackLayout x:Name="ingList" Grid.Row="3">
-                    <Entry/>
+                <Label x:Name="lblIngredients" Text="Składniki" Grid.Row="3"/>
+                <StackLayout x:Name="ingList" Grid.Row="4" Grid.ColumnSpan="2">
+                    <Entry x:Name="oneEntOfIngList"/>
                 </StackLayout>
-                <Button x:Name="Add_Next" Text="+" Grid.Row="4" Clicked="Add_Next_Clicked"/>
+                <Button x:Name="Add_Next" Text="+" Grid.Row="5" Clicked="Add_Next_Clicked"/>
 
-                <Label x:Name="lblRecipe" Text="Przepis" Grid.Row="5"/>
-                <Entry x:Name="entryRecipe_Text_Area" Grid.Row="6"/>
-
-                <Button Text="Dodaj przepis" Grid.Row="7" Clicked="Add_Recipe_Clicked" x:Name="btnAdd"/>
-
-                <Entry x:Name="entryRate"  Keyboard="Numeric" />
-
-                <Label x:Name="lblCategory" Text="Kategoria" Grid.Row="8"/>
+                <Label x:Name="lblRecipe" Text="Treść przepisu" Grid.Row="6" />
+                <Entry x:Name="entryRecipe_Text_Area" Grid.Row="7" Grid.ColumnSpan="2"/>
+            
+                <Label x:Name="lblRate" Text="Ocena" Grid.Row="8"/>
+                <Entry x:Name="entryRate"  Placeholder="2" Keyboard="Numeric"  Grid.Row="9"/>
            
+                <Button Text="Dodaj przepis" Grid.Row="10" Clicked="Add_Recipe_Clicked" x:Name="btnAdd"/>
 
         </Grid>
     </ContentPage.Content>
