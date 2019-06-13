@@ -1,7 +1,11 @@
 WinMetadata\Windows.winmd
 Assets\2nd_Dish.jpg
+Assets\2nd_Dish_Big.jpg
+Assets\2nd_Dish_Small.jpg
 Assets\Cookbook.jpeg
 Assets\Dessert.jpg
+Assets\Dessert_Big.jpg
+Assets\Dessert_Small.jpg
 Assets\LargeTile.scale-100.png
 Assets\LargeTile.scale-200.png
 Assets\LargeTile.scale-400.png
@@ -15,6 +19,8 @@ Assets\SmallTile.scale-100.png
 Assets\SmallTile.scale-200.png
 Assets\SmallTile.scale-400.png
 Assets\Soup.jpg
+Assets\Soup_Big.jpg
+Assets\Soup_Small.jpg
 Assets\SplashScreen.scale-100.png
 Assets\SplashScreen.scale-200.png
 Assets\SplashScreen.scale-400.png

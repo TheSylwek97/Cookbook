@@ -24,15 +24,15 @@ namespace Cookbook_App
             switch (category)
             {
                 case CategoryDataType.ScDish:
-                    img.Source = ImageSource.FromFile("Assets/2nd_Dish.jpg");
+                    img.Source = ImageSource.FromFile("Assets/2nd_Dish_Small.jpg");
                     formcategory = CategoryDataType.ScDish;
                     break;
                 case CategoryDataType.Dessers:
-                    img.Source = ImageSource.FromFile("Assets/Dessers.jpg");
+                    img.Source = ImageSource.FromFile("Assets/Dessers_Small.jpg");
                     formcategory = CategoryDataType.Dessers;
                     break;
                 default:
-                    img.Source = ImageSource.FromFile("Assets/Soups.jpg");
+                    img.Source = ImageSource.FromFile("Assets/Soups_Small.jpg");
                     formcategory = CategoryDataType.Soups;
                     break;
 

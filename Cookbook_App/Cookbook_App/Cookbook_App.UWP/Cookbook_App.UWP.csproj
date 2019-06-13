@@ -105,7 +105,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\2nd_Dish.jpg" />
+    <Content Include="Assets\2nd_Dish_Big.jpg" />
+    <Content Include="Assets\2nd_Dish_Small.jpg" />
     <Content Include="Assets\Dessert.jpg" />
+    <Content Include="Assets\Dessert_Big.jpg" />
+    <Content Include="Assets\Dessert_Small.jpg" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
     <Content Include="Assets\LargeTile.scale-400.png" />
@@ -119,6 +123,8 @@
     <Content Include="Assets\SmallTile.scale-200.png" />
     <Content Include="Assets\SmallTile.scale-400.png" />
     <Content Include="Assets\Soup.jpg" />
+    <Content Include="Assets\Soup_Big.jpg" />
+    <Content Include="Assets\Soup_Small.jpg" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-400.png" />

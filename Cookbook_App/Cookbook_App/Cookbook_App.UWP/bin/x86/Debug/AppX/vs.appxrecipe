@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-06-13T17:28:57.172</Modified>
+      <Modified>2019-06-13T20:51:29.909</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\bin\x86\Debug\Cookbook_App.UWP.exe">
       <PackagePath>entrypoint\Cookbook_App.UWP.exe</PackagePath>
-      <Modified>2019-06-13T17:28:55.675</Modified>
+      <Modified>2019-06-13T20:51:28.295</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\.nuget\packages\plugin.permissions\3.0.0.12\lib\uap10.0.10240\Plugin.Permissions.dll">
       <PackagePath>Plugin.Permissions.dll</PackagePath>
@@ -748,7 +748,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\bin\Debug\netstandard2.0\Cookbook_App.dll">
       <PackagePath>Cookbook_App.dll</PackagePath>
-      <Modified>2019-06-13T17:28:46.577</Modified>
+      <Modified>2019-06-13T20:51:18.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -758,13 +758,37 @@
       <PackagePath>Assets\2nd_Dish.jpg</PackagePath>
       <Modified>2019-06-12T20:25:53.188</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\2nd_Dish_Big.jpg">
+      <PackagePath>Assets\2nd_Dish_Big.jpg</PackagePath>
+      <Modified>2019-06-13T20:14:49.559</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\2nd_Dish_Small.jpg">
+      <PackagePath>Assets\2nd_Dish_Small.jpg</PackagePath>
+      <Modified>2019-06-13T20:15:28.140</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\Dessert.jpg">
       <PackagePath>Assets\Dessert.jpg</PackagePath>
       <Modified>2019-06-12T20:25:53.227</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\Dessert_Big.jpg">
+      <PackagePath>Assets\Dessert_Big.jpg</PackagePath>
+      <Modified>2019-06-12T20:25:53.227</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\Dessert_Small.jpg">
+      <PackagePath>Assets\Dessert_Small.jpg</PackagePath>
+      <Modified>2019-06-13T20:09:21.801</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\Soup.jpg">
       <PackagePath>Assets\Soup.jpg</PackagePath>
       <Modified>2019-06-12T20:25:53.233</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\Soup_Big.jpg">
+      <PackagePath>Assets\Soup_Big.jpg</PackagePath>
+      <Modified>2019-06-13T20:12:24.301</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\Soup_Small.jpg">
+      <PackagePath>Assets\Soup_Small.jpg</PackagePath>
+      <Modified>2019-06-13T20:11:43.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
@@ -927,7 +951,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\Cookbook.jpeg">
       <PackagePath>Assets\Cookbook.jpeg</PackagePath>
-      <Modified>2019-06-13T17:03:03.598</Modified>
+      <Modified>2019-06-13T20:20:40.635</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -939,11 +963,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-06-13T17:28:55.325</Modified>
+      <Modified>2019-06-13T20:51:27.928</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-06-13T17:28:55.326</Modified>
+      <Modified>2019-06-13T20:51:27.928</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -955,11 +979,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-06-13T17:05:35.492</Modified>
+      <Modified>2019-06-13T20:20:00.992</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\bin\x86\Debug\Core\Cookbook_App.UWP.exe">
       <PackagePath>Cookbook_App.UWP.exe</PackagePath>
-      <Modified>2019-06-13T17:28:57.161</Modified>
+      <Modified>2019-06-13T20:51:29.895</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

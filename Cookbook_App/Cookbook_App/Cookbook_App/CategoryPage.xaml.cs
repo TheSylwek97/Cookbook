@@ -37,8 +37,26 @@ namespace Cookbook_App
 
         private async void BtnSearch_Clicked(object sender, EventArgs e)
         {
+            await Search();
+        }
+
+        private async Task Search()
+        {
             var keyword = entrySearch.Text;
-            var results = await App.LocalDB.GetRecpiesLikeName(keyword); 
+            var results = await App.LocalDB.GetRecpiesLikeName(keyword);
+
+            string resList = string.Empty;
+            foreach (var Recipe in results)
+            {
+                resList += Recipe.Name;
+            }
+
+            string answer = string.Empty;
+            foreach (var x in resList)
+            {
+                answer += x;
+            }
+            await DisplayAlert("Znalezione przepisy:", $"{answer}", "OK");
         }
     }
 }
