@@ -15,6 +15,7 @@ namespace Cookbook_App
 	public partial class ListPage : ContentPage
 	{
         private Recipe _recipe;
+        CategoryDataType formcategory;
         //private CategoryDataType _cat;
         public ListPage(CategoryDataType category)
 		{
@@ -24,20 +25,22 @@ namespace Cookbook_App
             {
                 case CategoryDataType.ScDish:
                     img.Source = ImageSource.FromFile("Assets/2nd_Dish.jpg");
+                    formcategory = CategoryDataType.ScDish;
                     break;
                 case CategoryDataType.Dessers:
                     img.Source = ImageSource.FromFile("Assets/Dessers.jpg");
+                    formcategory = CategoryDataType.Dessers;
                     break;
                 default:
                     img.Source = ImageSource.FromFile("Assets/Soups.jpg");
+                    formcategory = CategoryDataType.Soups;
                     break;
 
             }
         }
-        //konstruktor ze listą znalezionych przepisów parametr listPage list of recipe = do wyświetlenia jako mylistviwe 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new FormPage());
+            await Navigation.PushAsync(new FormPage(/*formcategory*/));
         }
         protected override async void OnAppearing()
         {

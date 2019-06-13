@@ -16,6 +16,8 @@ namespace Cookbook_App
 	{
         private Recipe _recipe;
         string pathToFile;
+        private CategoryDataType formcategory;
+
         public FormPage (Recipe recipe = null)
 		{
 			InitializeComponent ();
@@ -35,10 +37,16 @@ namespace Cookbook_App
                 btnAdd.IsVisible = false;
             }
         }
-        /*
-        private async void Add_Recipe_Clicked(object sender, EventArgs e)
+
+        public FormPage(CategoryDataType formcategory)
         {
-        }*/
+            this.formcategory = formcategory;
+        }
+
+        /*
+private async void Add_Recipe_Clicked(object sender, EventArgs e)
+{
+}*/
 
         private async Task AddNewRecipe()
         {
@@ -57,7 +65,7 @@ namespace Cookbook_App
                 Ingredient = ingredients,
                 Recipe_Text_Area = entryRecipe_Text_Area.Text,
                 FilePath = pathToFile,
-                //Category = lblCategory.Text
+                Category = formcategory,
             };
 
             if (_recipe != null)
@@ -126,9 +134,9 @@ namespace Cookbook_App
             });
         }
 
-        private void Add_Recipe_Clicked(object sender, EventArgs e)
+        private async void Add_Recipe_Clicked(object sender, EventArgs e)
         {
-
+            await AddNewRecipe();
         }
     }
 }

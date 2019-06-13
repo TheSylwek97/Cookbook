@@ -21,7 +21,7 @@
             </Grid.ColumnDefinitions>
             
                 <Label Text="Dodaj Przepis"/>
-                <Entry x:Name="entryName"  Text="{Binding entryNameOfDish}" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="entryName"  Placeholder="Nazwa" Grid.Row="1" Grid.Column="0"/>
                 <Button x:Name="btnTakePho" Text="Zrób zdj" Clicked="BtnTakePho_Clicked" Grid.Row="1" Grid.Column="1"/>
 
                 <Image x:Name="image"/>
@@ -33,13 +33,11 @@
                 <Button x:Name="Add_Next" Text="+" Grid.Row="4" Clicked="Add_Next_Clicked"/>
 
                 <Label x:Name="lblRecipe" Text="Przepis" Grid.Row="5"/>
-                <Entry x:Name="entryRecipe_Text_Area" Grid.Row="6"/>
+                <Entry x:Name="entryRecipe_Text_Area" Placeholder="Wprowadź przepis" Grid.Row="6"/>
 
                 <Button Text="Dodaj przepis" Grid.Row="7" Clicked="Add_Recipe_Clicked" x:Name="btnAdd"/>
 
-                <Entry x:Name="entryRate"  Keyboard="Numeric" />
-
-                <Label x:Name="lblCategory" Text="Kategoria" Grid.Row="8"/>
+                <Entry x:Name="entryRate" Placeholder="0" Keyboard="Numeric" />
            
 
         </Grid>
