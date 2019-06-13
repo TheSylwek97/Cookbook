@@ -21,21 +21,21 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Label x:Name="Title" Text="{Binding Name}" />
-            <Image Grid.Row="1" x:Name="imgOfDish"/>
-            <Label x:Name="Rating" Grid.Row="2" BackgroundColor="Green" />
+            <Label x:Name="Title" Font="Bold,20" Text="{Binding Name}" />
+            <Image Grid.Row="1" x:Name="imgOfDish" Grid.ColumnSpan="2"/>
+            <Label x:Name="Rating" Grid.Row="2" Grid.ColumnSpan="2"/>
 
-            <Label x:Name="Ingredients" Text="Składniki" Grid.Row="3"/>
-            <Label x:Name="AllIng" Text="{Binding Ingredient}" Grid.Row="4" />
+            <Label x:Name="Ingredients" Text="Składniki" Grid.Row="3" TextColor="Gray" />
+            <Label x:Name="AllIng" Text="{Binding Ingredient}" Grid.Row="4" Grid.ColumnSpan="2"/>
 
-            <Label x:Name="Recipe" Text="Przepis" Grid.Row="5"/>
-            <Label Grid.Row="6" Text="{Binding Recipe_Text_Area}"/>
+            <Label x:Name="Recipe" Text="Przepis" Grid.Row="5" TextColor="Gray"/>
+            <Label Grid.Row="6" Text="{Binding Recipe_Text_Area}" Grid.ColumnSpan="2" />
 
             <Image Grid.Row="7" x:Name="imgRate"/>
 
             <Button Text="Edytuj"  Grid.Row="8" Grid.Column="0" Clicked="Edit_Clicked"/>
             <Button Text="Usuń"  Grid.Row="8" Grid.Column="1" Clicked="Delete_Clicked"/>
-            <Button Text="Wyślij email"  Grid.Row="9" Clicked="Add_Clicked"/>
+            <Button Text="Wyślij email"  Grid.Row="9" Clicked="Add_Clicked" Grid.ColumnSpan="2"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -13,7 +13,6 @@ namespace Cookbook_App
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class DetailPage : ContentPage
 	{
-        //private bool _isSelectable;
         private List<Recipe> _recipesSelected;
         private List<Recipe> _recipes;
 
@@ -25,6 +24,28 @@ namespace Cookbook_App
             //isSelectable = false;
             InitializeComponent ();
             BindingContext = _recipe;
+
+            switch (_recipe.Rate)
+            {
+                case 0:
+                    imgRate.Source = ImageSource.FromFile("Assets/r0.png");
+                    break;
+                case 1:
+                    imgRate.Source = ImageSource.FromFile("Assets/r1.png");
+                    break;
+                case 2:
+                    imgRate.Source = ImageSource.FromFile("Assets/r2.png");
+                    break;
+                case 3:
+                    imgRate.Source = ImageSource.FromFile("Assets/r3.png");
+                    break;
+                case 4:
+                    imgRate.Source = ImageSource.FromFile("Assets/r4.png");
+                    break;
+                default:
+                    imgRate.Source = ImageSource.FromFile("Assets/r5.png");
+                    break;
+            }
 		}
 
         private void Edit_Clicked(object sender, EventArgs e)
@@ -32,9 +53,9 @@ namespace Cookbook_App
 
         }
 
-        private void Delete_Clicked(object sender, EventArgs e)
+        private async void Delete_Clicked(object sender, EventArgs e)
         {
-
+            //await App.LocalDB.DeleteItem();
         }
         //switch(recipeId.Rate)
 

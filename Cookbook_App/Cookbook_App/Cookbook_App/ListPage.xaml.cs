@@ -11,16 +11,20 @@ using Xamarin.Forms.Xaml;
 
 namespace Cookbook_App
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ListPage : ContentPage
-	{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class ListPage : ContentPage
+    {
+
+        private bool _isSelectable;
+        private List<Recipe> _recipesSelected;
+
         private Recipe _recipe;
         CategoryDataType formcategory;
         //private CategoryDataType _cat;
         public ListPage(CategoryDataType category)
-		{
+        {
             //_cat = category;
-			InitializeComponent ();
+            InitializeComponent();
             switch (category)
             {
                 case CategoryDataType.ScDish:
@@ -38,7 +42,7 @@ namespace Cookbook_App
 
             }
         }
-        private async void Button_Clicked(object sender, EventArgs e)
+        private async void Add_Button_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new FormPage(/*formcategory*/));
         }
@@ -57,10 +61,31 @@ namespace Cookbook_App
 
         private async void MyListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-           var recp = e.Item as Recipe;
+            var recp = e.Item as Recipe;
             //await DisplayAlert(recp.Name, $"Przepis zawiera: {recp.Recipe_Text_Area} oraz skł: {recp.Ingredient}", "OK");
             //await Navigation.PushAsync(new DetailPage(recp.ID));
             await Navigation.PushAsync(new DetailPage(recp));
+        }
+        
+
+        private async void BtnRemoveRecpies_Clicked(object sender, EventArgs e)
+        {
+            if (_isSelectable)
+            {
+                if (_recipesSelected.Any())
+                {
+                    foreach (var s in _recipesSelected)
+                    {
+                        await App.LocalDB.DeleteItem(s);
+                    }
+
+                    _recipesSelected.Clear();
+                    await DisplayAlert("Sukces", "Usunięto rekordy", "OK");
+                    await RefreshData();
+                }
+            }
+            _isSelectable = !_isSelectable;
+            btnRemoveRecpies.Text = _isSelectable ? "Select students" : "Remove students";
         }
     }
 }

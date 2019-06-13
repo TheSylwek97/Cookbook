@@ -36,13 +36,15 @@ namespace Cookbook_App.Data
         {
             return await db.DeleteAsync(item);
         }
-
+        public async Task<T> GetByID<T>(int id) where T : class, ISqliteModel, new()
+        {
+            return await db.Table<T>().Where(t => t.ID == id).FirstOrDefaultAsync();
+        }
         public async Task<List<Recipe>> GetRecpiesLikeName(string name)
         {
             return await db.Table<Recipe>().Where(x => x.Name.Contains(name) 
                                                     || x.Recipe_Text_Area.Contains(name)
                                                     || x.Ingredient.Contains(name)).ToListAsync();
-
         }
 
     }
