@@ -46,7 +46,10 @@ namespace Cookbook_App
                     imgRate.Source = ImageSource.FromFile("Assets/r5.png");
                     break;
             }
-		}
+
+            imgOfDish.Source = ImageSource.FromFile(_recipe.FilePath);
+
+        }
 
         private void Edit_Clicked(object sender, EventArgs e)
         {

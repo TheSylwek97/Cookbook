@@ -5,16 +5,14 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="20"/> <!--0-->
-                <RowDefinition Height="40"/> <!--1-->
-                <RowDefinition Height="40"/> <!--2-->
-                <RowDefinition Height="40"/> <!--3-->
+                <RowDefinition Height="*"/> <!--0-->
+                <RowDefinition Height="*"/> <!--1-->
+                <RowDefinition Height="*"/> <!--2-->
+                <RowDefinition Height="*"/> <!--3-->
                 <RowDefinition Height="*"/>  <!--4-->
-                <RowDefinition Height="40"/> <!--5-->
+                <RowDefinition Height="*"/> <!--5-->
                 <RowDefinition Height="*"/>  <!--6-->
-                <RowDefinition Height="45"/><!--7-->
-                <RowDefinition Height="45"/><!--8-->
-                <RowDefinition Height="45"/><!--9-->
+                <RowDefinition Height="*"/><!--7-->
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -23,19 +21,18 @@
 
             <Label x:Name="Title" Font="Bold,20" Text="{Binding Name}" />
             <Image Grid.Row="1" x:Name="imgOfDish" Grid.ColumnSpan="2"/>
-            <Label x:Name="Rating" Grid.Row="2" Grid.ColumnSpan="2"/>
 
-            <Label x:Name="Ingredients" Text="Składniki" Grid.Row="3" TextColor="Gray" />
-            <Label x:Name="AllIng" Text="{Binding Ingredient}" Grid.Row="4" Grid.ColumnSpan="2"/>
+            <Label x:Name="Ingredients" Text="Składniki" Grid.Row="2" TextColor="Gray" />
+            <Label x:Name="AllIng" Text="{Binding Ingredient}" Grid.Row="3" Grid.ColumnSpan="2"/>
 
-            <Label x:Name="Recipe" Text="Przepis" Grid.Row="5" TextColor="Gray"/>
+            <Label x:Name="Recipe" Text="Przepis" Grid.Row="4" TextColor="Gray"/>
             <Label Grid.Row="6" Text="{Binding Recipe_Text_Area}" Grid.ColumnSpan="2" />
 
-            <Image Grid.Row="7" x:Name="imgRate"/>
+            <Image Grid.Row="5" x:Name="imgRate"/>
 
-            <Button Text="Edytuj"  Grid.Row="8" Grid.Column="0" Clicked="Edit_Clicked"/>
-            <Button Text="Usuń"  Grid.Row="8" Grid.Column="1" Clicked="Delete_Clicked"/>
-            <Button Text="Wyślij email"  Grid.Row="9" Clicked="Add_Clicked" Grid.ColumnSpan="2"/>
+            <Button Text="Edytuj"  Grid.Row="6" Grid.Column="0" Clicked="Edit_Clicked"/>
+            <Button Text="Usuń"  Grid.Row="6" Grid.Column="1" Clicked="Delete_Clicked"/>
+            <Button Text="Wyślij email"  Grid.Row="7" Clicked="Add_Clicked" Grid.ColumnSpan="2"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
