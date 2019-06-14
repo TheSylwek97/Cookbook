@@ -15,10 +15,11 @@ namespace Cookbook_App
 	{
         private List<Recipe> _recipesSelected;
         private List<Recipe> _recipes;
-
+        private Recipe currentRecipe;
 
         public DetailPage (Recipe _recipe)
 		{
+            currentRecipe = _recipe;
             _recipesSelected = new List<Recipe>();
             _recipes = new List<Recipe>();
             //isSelectable = false;
@@ -58,9 +59,8 @@ namespace Cookbook_App
 
         private async void Delete_Clicked(object sender, EventArgs e)
         {
-            //await App.LocalDB.DeleteItem();
+            await App.LocalDB.DeleteItem(currentRecipe);
         }
-        //switch(recipeId.Rate)
 
         private async void Add_Clicked(object sender, EventArgs e)
         {

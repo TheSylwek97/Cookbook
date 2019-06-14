@@ -32,11 +32,11 @@ namespace Cookbook_App
                     formcategory = CategoryDataType.ScDish;
                     break;
                 case CategoryDataType.Dessers:
-                    img.Source = ImageSource.FromFile("Assets/Dessers_Small.jpg");
+                    img.Source = ImageSource.FromFile("Assets/Dessert_Small.jpg");
                     formcategory = CategoryDataType.Dessers;
                     break;
                 default:
-                    img.Source = ImageSource.FromFile("Assets/Soups_Small.jpg");
+                    img.Source = ImageSource.FromFile("Assets/Soup_Small.jpg");
                     formcategory = CategoryDataType.Soups;
                     break;
 
@@ -44,7 +44,7 @@ namespace Cookbook_App
         }
         private async void Add_Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new FormPage(/*formcategory*/));
+            await Navigation.PushAsync(new FormPage(null, formcategory ));
         }
         protected override async void OnAppearing()
         {
@@ -56,6 +56,7 @@ namespace Cookbook_App
             //_recipe = await App.LocalDB.GetRecpies<Recipe>();
             //MyListView.ItemsSource = _recipe;
             var recpies = await App.LocalDB.GetRecpies();
+            recpies.RemoveAll(r => r.Category != formcategory);
             MyListView.ItemsSource = recpies;
         }
 

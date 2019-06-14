@@ -18,10 +18,11 @@ namespace Cookbook_App
         string pathToFile;
         private CategoryDataType formcategory;
 
-        public FormPage (Recipe recipe = null)
+        public FormPage (Recipe recipe = null, CategoryDataType formcategory = CategoryDataType.Soups)
 		{
 			InitializeComponent ();
             _recipe = recipe;
+            this.formcategory = formcategory;
             //lblCategory.Text = $"Teacher: {_recipe.Category}";
             //CategoryDataType categoryForm;
 
@@ -37,12 +38,12 @@ namespace Cookbook_App
                 btnAdd.IsVisible = false;
             }
         }
-
+        /*
         public FormPage(CategoryDataType formcategory)
         {
             this.formcategory = formcategory;
         }
-
+        */
         /*
 private async void Add_Recipe_Clicked(object sender, EventArgs e)
 {
