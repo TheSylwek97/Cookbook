@@ -60,6 +60,7 @@ namespace Cookbook_App
         private async void Delete_Clicked(object sender, EventArgs e)
         {
             await App.LocalDB.DeleteItem(currentRecipe);
+            await Navigation.PopAsync();
         }
 
         private async void Add_Clicked(object sender, EventArgs e)

@@ -25,10 +25,6 @@
                    Text="Dodaj przepis"
                    Clicked="Add_Button_Clicked"/>
 
-            <Button Grid.Row="3" 
-                   Text="Usuń"
-                   x:Name="btnRemoveRecpies"
-                   Clicked="BtnRemoveRecpies_Clicked" />
 
             <Image x:Name="img"
                    Grid.Row="0"

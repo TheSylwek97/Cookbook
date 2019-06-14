@@ -17,7 +17,7 @@ namespace Cookbook_App
 
         private bool _isSelectable;
         private List<Recipe> _recipesSelected;
-
+        private string localSearch;
         private Recipe _recipe;
         CategoryDataType formcategory;
         //private CategoryDataType _cat;
@@ -39,8 +39,12 @@ namespace Cookbook_App
                     img.Source = ImageSource.FromFile("Assets/Soup_Small.jpg");
                     formcategory = CategoryDataType.Soups;
                     break;
-
             }
+        }
+        public ListPage(string search)
+        {
+            InitializeComponent();
+            localSearch = search;
         }
         private async void Add_Button_Clicked(object sender, EventArgs e)
         {
@@ -53,10 +57,19 @@ namespace Cookbook_App
         }
         private async Task RefreshData()
         {
+            List<Recipe> recpies;
+            if (string.IsNullOrEmpty(localSearch))
+            {
+                recpies = await App.LocalDB.GetRecpies();
+                recpies.RemoveAll(r => r.Category != formcategory);
+            }
+            else
+            {
+                recpies = await App.LocalDB.GetRecpiesLikeName(localSearch);
+            }
             //_recipe = await App.LocalDB.GetRecpies<Recipe>();
             //MyListView.ItemsSource = _recipe;
-            var recpies = await App.LocalDB.GetRecpies();
-            recpies.RemoveAll(r => r.Category != formcategory);
+
             MyListView.ItemsSource = recpies;
         }
 
@@ -68,25 +81,6 @@ namespace Cookbook_App
             await Navigation.PushAsync(new DetailPage(recp));
         }
         
-
-        private async void BtnRemoveRecpies_Clicked(object sender, EventArgs e)
-        {
-            if (_isSelectable)
-            {
-                if (_recipesSelected.Any())
-                {
-                    foreach (var s in _recipesSelected)
-                    {
-                        await App.LocalDB.DeleteItem(s);
-                    }
-
-                    _recipesSelected.Clear();
-                    await DisplayAlert("Sukces", "Usunięto rekordy", "OK");
-                    await RefreshData();
-                }
-            }
-            _isSelectable = !_isSelectable;
-            btnRemoveRecpies.Text = _isSelectable ? "Select students" : "Remove students";
-        }
+        
     }
 }
