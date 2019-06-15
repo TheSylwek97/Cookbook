@@ -32,7 +32,7 @@
 
             <Button Text="Edytuj"  Grid.Row="6" Grid.Column="0" Clicked="Edit_Clicked"/>
             <Button Text="Usuń"  Grid.Row="6" Grid.Column="1" Clicked="Delete_Clicked"/>
-            <Button Text="Wyślij email"  Grid.Row="7" Clicked="Add_Clicked" Grid.ColumnSpan="2"/>
+            <Button Text="Udostępnij"  Grid.Row="7" Clicked="Add_Clicked" Grid.ColumnSpan="2"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

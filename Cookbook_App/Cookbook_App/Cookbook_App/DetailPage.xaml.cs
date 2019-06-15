@@ -20,9 +20,6 @@ namespace Cookbook_App
         public DetailPage (Recipe _recipe)
 		{
             currentRecipe = _recipe;
-            _recipesSelected = new List<Recipe>();
-            _recipes = new List<Recipe>();
-            //isSelectable = false;
             InitializeComponent ();
             BindingContext = _recipe;
 
@@ -59,8 +56,13 @@ namespace Cookbook_App
 
         private async void Delete_Clicked(object sender, EventArgs e)
         {
-            await App.LocalDB.DeleteItem(currentRecipe);
-            await Navigation.PopAsync();
+            var answer = await DisplayAlert("Usuń", "Czy jesteś pewień, że chcesz usunąć ten przepis?", "Tak", "Nie");
+            if (answer)
+            {
+                await App.LocalDB.DeleteItem(currentRecipe);
+                await Navigation.PopAsync();
+            }
+
         }
 
         private async void Add_Clicked(object sender, EventArgs e)

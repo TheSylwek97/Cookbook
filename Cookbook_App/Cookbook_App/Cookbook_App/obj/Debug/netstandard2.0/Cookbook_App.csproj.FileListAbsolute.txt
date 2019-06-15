@@ -8,7 +8,6 @@ C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\ob
 C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\FormPage.xaml.g.cs
 C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\ListPage.xaml.g.cs
 C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\ViewModel\RecipeListViewPage.xaml.g.cs
 C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\Cookbook_App.csproj.CoreCompileInputs.cache
 C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\Cookbook_App.AssemblyInfoInputs.cache
 C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App\obj\Debug\netstandard2.0\Cookbook_App.AssemblyInfo.cs

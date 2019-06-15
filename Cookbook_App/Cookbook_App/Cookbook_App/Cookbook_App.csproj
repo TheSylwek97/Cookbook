@@ -10,15 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\2nd_Dish.jpg" />
-    <None Remove="Images\Dessert.jpg" />
-    <None Remove="Images\Soup.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Images\2nd_Dish.jpg" />
-    <Content Include="Images\Dessert.jpg" />
-    <Content Include="Images\Soup.jpg" />
+    <Compile Remove="Images\**" />
+    <EmbeddedResource Remove="Images\**" />
+    <None Remove="Images\**" />
   </ItemGroup>
 
   <ItemGroup>

@@ -53,9 +53,9 @@ namespace Cookbook_App
                 case CategoryDataType.Dessers:
                     return ImageSource.FromResource(string.Empty);
                 case CategoryDataType.Soups:
-                    return ImageSource.FormFile("");
+                    return ImageSource.FormFile("Assets/bg.jpeg");
                 default:
-                    return ImageSource.FormFile("123");
+                    return ImageSource.FormFile("Assets/r0.png");
             }
         }*/
     }

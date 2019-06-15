@@ -26,7 +26,7 @@ namespace Cookbook_App
         {
             base.OnAppearing();
             //await RefreshData();
-            /*
+            /* //.test. 
             var recipe = new Recipe()
             {
                 Name="test name",
@@ -39,7 +39,7 @@ namespace Cookbook_App
             await DisplayAlert("ok", $"Liczba rek w db {recpies.Count}", "ok");
             */
         }
-        
+
 
 
     }

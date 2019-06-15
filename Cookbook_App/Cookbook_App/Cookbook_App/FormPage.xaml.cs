@@ -23,7 +23,6 @@ namespace Cookbook_App
 			InitializeComponent ();
             _recipe = recipe;
             this.formcategory = formcategory;
-            //lblCategory.Text = $"Teacher: {_recipe.Category}";
             //CategoryDataType categoryForm;
 
             if (_recipe != null)
@@ -31,24 +30,12 @@ namespace Cookbook_App
                 entryName.Text = _recipe.Name;
                 entryRate.Text = _recipe.Rate.ToString();
                 //entryIngredient.Text = _recipe.Ingredient;
-                //entryGrade.Text = _recipe.Grade.ToString();
                 entryRecipe_Text_Area.Text = _recipe.Recipe_Text_Area;
                // categoryForm = _recipe.Category;
                 //btnDelete.IsVisible = true;
                 btnAdd.IsVisible = false;
             }
         }
-        /*
-        public FormPage(CategoryDataType formcategory)
-        {
-            this.formcategory = formcategory;
-        }
-        */
-        /*
-private async void Add_Recipe_Clicked(object sender, EventArgs e)
-{
-}*/
-
         private async Task AddNewRecipe()
         {
             string ingredients = string.Empty;
@@ -77,14 +64,7 @@ private async void Add_Recipe_Clicked(object sender, EventArgs e)
             await App.LocalDB.SaveItem(recipe);
             await DisplayAlert("Sukces", "Zapis powiódł się", "OK");
             await Navigation.PopAsync();
-        }/*
-        private void ClearFields()
-        {
-            entryName.Text = string.Empty;
-            entryIngredient.Text = string.Empty;
-            entryRecipe_Text_Area.Text = string.Empty;
         }
-        */
 
         private async void BtnDelete_Clicked(object sender, EventArgs e)
         {

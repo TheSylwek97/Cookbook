@@ -14,11 +14,7 @@ namespace Cookbook_App
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListPage : ContentPage
     {
-
-        private bool _isSelectable;
-        private List<Recipe> _recipesSelected;
         private string localSearch;
-        private Recipe _recipe;
         CategoryDataType formcategory;
         //private CategoryDataType _cat;
         public ListPage(CategoryDataType category)
@@ -76,9 +72,11 @@ namespace Cookbook_App
         private async void MyListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var recp = e.Item as Recipe;
+            await Navigation.PushAsync(new DetailPage(recp));
+            //.test. 
             //await DisplayAlert(recp.Name, $"Przepis zawiera: {recp.Recipe_Text_Area} oraz skł: {recp.Ingredient}", "OK");
             //await Navigation.PushAsync(new DetailPage(recp.ID));
-            await Navigation.PushAsync(new DetailPage(recp));
+            
         }
         
         
