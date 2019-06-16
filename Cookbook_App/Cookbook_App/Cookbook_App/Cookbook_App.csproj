@@ -45,4 +45,25 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="CategoryPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="DetailPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="FormPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ListPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
 </Project>

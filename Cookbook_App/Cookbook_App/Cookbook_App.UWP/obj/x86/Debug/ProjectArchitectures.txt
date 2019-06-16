@@ -1,1 +1,1 @@
-C:\Users\Sylwia\Documents\Git\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Cookbook_App.UWP.csproj;x86
+C:\Users\Klaudik\Documents\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Cookbook_App.UWP.csproj;x86

@@ -20,7 +20,10 @@ namespace Cookbook_App
 
         public FormPage (Recipe recipe = null, CategoryDataType formcategory = CategoryDataType.Soups)
 		{
-			InitializeComponent ();
+            var scroll = new ScrollView();
+            Content = scroll;
+
+            InitializeComponent ();
             _recipe = recipe;
             this.formcategory = formcategory;
             //CategoryDataType categoryForm;

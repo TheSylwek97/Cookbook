@@ -7393,9 +7393,6 @@ namespace Cookbook_App.Droid
 			// aapt resource value: 0x7F060002
 			public const int file_paths = 2131099650;
 			
-			// aapt resource value: 0x7F060003
-			public const int xamarin_essentials_fileprovider_file_paths = 2131099651;
-			
 			static Xml()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

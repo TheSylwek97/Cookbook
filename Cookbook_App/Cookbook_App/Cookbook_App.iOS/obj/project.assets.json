@@ -1316,34 +1316,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sylwia\\.nuget\\packages\\": {}
+    "C:\\Users\\Klaudik\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sylwia\\Documents\\Git\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App.iOS\\Cookbook_App.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Klaudik\\Documents\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App.iOS\\Cookbook_App.iOS.csproj",
       "projectName": "Cookbook_App.iOS",
-      "projectPath": "C:\\Users\\Sylwia\\Documents\\Git\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App.iOS\\Cookbook_App.iOS.csproj",
-      "packagesPath": "C:\\Users\\Sylwia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sylwia\\Documents\\Git\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Klaudik\\Documents\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App.iOS\\Cookbook_App.iOS.csproj",
+      "packagesPath": "C:\\Users\\Klaudik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Klaudik\\Documents\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Sylwia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Klaudik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Sylwia\\Documents\\Git\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App\\Cookbook_App.csproj": {
-              "projectPath": "C:\\Users\\Sylwia\\Documents\\Git\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App\\Cookbook_App.csproj"
+            "C:\\Users\\Klaudik\\Documents\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App\\Cookbook_App.csproj": {
+              "projectPath": "C:\\Users\\Klaudik\\Documents\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App\\Cookbook_App.csproj"
             }
           }
         }

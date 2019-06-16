@@ -8637,38 +8637,41 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sylwia\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
+    "C:\\Users\\Klaudik\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sylwia\\Documents\\Git\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App.UWP\\Cookbook_App.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\Klaudik\\Documents\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App.UWP\\Cookbook_App.UWP.csproj",
       "projectName": "Cookbook_App.UWP",
-      "projectPath": "C:\\Users\\Sylwia\\Documents\\Git\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App.UWP\\Cookbook_App.UWP.csproj",
-      "packagesPath": "C:\\Users\\Sylwia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sylwia\\Documents\\Git\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App.UWP\\obj\\",
+      "projectPath": "C:\\Users\\Klaudik\\Documents\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App.UWP\\Cookbook_App.UWP.csproj",
+      "packagesPath": "C:\\Users\\Klaudik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Klaudik\\Documents\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Sylwia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Klaudik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "uap10.0.16299"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\Sylwia\\Documents\\Git\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App\\Cookbook_App.csproj": {
-              "projectPath": "C:\\Users\\Sylwia\\Documents\\Git\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App\\Cookbook_App.csproj"
+            "C:\\Users\\Klaudik\\Documents\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App\\Cookbook_App.csproj": {
+              "projectPath": "C:\\Users\\Klaudik\\Documents\\Cookbook\\Cookbook_App\\Cookbook_App\\Cookbook_App\\Cookbook_App.csproj"
             }
           }
         }

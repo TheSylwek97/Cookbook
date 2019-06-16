@@ -17,7 +17,8 @@
             <Image Source="Assets/Cookbook.jpeg"
                    HeightRequest="300"
                    HorizontalOptions="Fill"
-                   Aspect="AspectFill">
+                   Aspect="AspectFill"
+                   Grid.Row="0">
                 
             </Image>
             <!-- <Label Text="Cookbook" 
@@ -28,7 +29,9 @@
             <Button Text="Tap to start" 
                     Clicked="Button_Clicked" 
                     Grid.Row="1" 
-                    BackgroundColor="Indigo">
+                    BackgroundColor="#35ACFF"
+                    Margin="20,35,20,20"
+                    >
                 
             </Button>
 
