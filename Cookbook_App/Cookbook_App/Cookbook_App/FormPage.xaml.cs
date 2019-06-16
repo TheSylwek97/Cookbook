@@ -37,8 +37,11 @@ namespace Cookbook_App
                // categoryForm = _recipe.Category;
                 //btnDelete.IsVisible = true;
                 btnAdd.IsVisible = false;
+
             }
         }
+
+       
         private async Task AddNewRecipe()
         {
             string ingredients = string.Empty;
@@ -46,7 +49,7 @@ namespace Cookbook_App
             foreach(var x in ingList.Children)
             {
                 var entry = (Entry)x;
-                ingredients += entry.Text + ";";
+                ingredients += entry.Text + ", ";
             }
 
             var recipe = new Recipe()

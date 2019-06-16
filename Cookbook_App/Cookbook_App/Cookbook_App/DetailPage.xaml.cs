@@ -49,9 +49,9 @@ namespace Cookbook_App
 
         }
 
-        private void Edit_Clicked(object sender, EventArgs e)
+        private async void Edit_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new DetailEditPage());
         }
 
         private async void Delete_Clicked(object sender, EventArgs e)
