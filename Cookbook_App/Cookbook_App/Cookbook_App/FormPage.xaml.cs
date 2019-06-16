@@ -69,6 +69,7 @@ namespace Cookbook_App
             await Navigation.PopAsync();
         }
 
+
         private async void BtnDelete_Clicked(object sender, EventArgs e)
         {
             await DeleteRecipe();

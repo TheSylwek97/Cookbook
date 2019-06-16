@@ -113,6 +113,8 @@
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
     <Content Include="Assets\LargeTile.scale-400.png" />
+    <Content Include="Assets\main-courses-small.jpg" />
+    <Content Include="Assets\main-courses.jpg" />
     <Content Include="Assets\r0.png" />
     <Content Include="Assets\r1.png" />
     <Content Include="Assets\r2.png" />
@@ -122,9 +124,8 @@
     <Content Include="Assets\SmallTile.scale-100.png" />
     <Content Include="Assets\SmallTile.scale-200.png" />
     <Content Include="Assets\SmallTile.scale-400.png" />
+    <Content Include="Assets\Soup-small.jpg" />
     <Content Include="Assets\Soup.jpg" />
-    <Content Include="Assets\Soup_Big.jpg" />
-    <Content Include="Assets\Soup_Small.jpg" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-400.png" />

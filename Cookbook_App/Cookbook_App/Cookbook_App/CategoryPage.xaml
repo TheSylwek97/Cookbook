@@ -21,7 +21,7 @@
                     Text="Soups"
                     Grid.Row="0" 
                     Grid.ColumnSpan="2"
-                    Image="Assets/Soup_Big.jpg"
+                    Image="Assets/Soup-small.jpg"
                     Clicked="Soups_Clicked"/>
 
 
@@ -30,7 +30,7 @@
                     Text="Main_Courses"
                     Grid.Row="1" 
                     Grid.ColumnSpan="2"
-                    Image="Assets/2nd_Dish_Big.jpg"
+                    Image="Assets/main-courses-small.jpg"
                     Clicked="Main_Courses_Clicked">
 
             </Button>

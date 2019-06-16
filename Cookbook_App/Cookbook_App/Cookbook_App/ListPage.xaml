@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="40" />
+                <RowDefinition Height="140" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="40" />
                 <RowDefinition Height="40" />
@@ -28,7 +28,7 @@
 
             <Image x:Name="img"
                    Grid.Row="0"
-                   HeightRequest="40"
+                   HeightRequest="140"
                    HorizontalOptions="Fill"
                    Aspect="AspectFill"
                    ></Image>

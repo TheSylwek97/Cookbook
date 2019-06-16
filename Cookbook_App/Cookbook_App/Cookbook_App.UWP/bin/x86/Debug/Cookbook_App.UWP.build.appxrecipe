@@ -583,14 +583,17 @@
     <AppxPackagedFile Include="C:\Users\Klaudik\Documents\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\Dessert_Small.jpg">
       <PackagePath>Assets\Dessert_Small.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Klaudik\Documents\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\main-courses-small.jpg">
+      <PackagePath>Assets\main-courses-small.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Klaudik\Documents\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\main-courses.jpg">
+      <PackagePath>Assets\main-courses.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Klaudik\Documents\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\Soup-small.jpg">
+      <PackagePath>Assets\Soup-small.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Klaudik\Documents\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\Soup.jpg">
       <PackagePath>Assets\Soup.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Klaudik\Documents\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\Soup_Big.jpg">
-      <PackagePath>Assets\Soup_Big.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Klaudik\Documents\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\Soup_Small.jpg">
-      <PackagePath>Assets\Soup_Small.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Klaudik\Documents\Cookbook\Cookbook_App\Cookbook_App\Cookbook_App.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
