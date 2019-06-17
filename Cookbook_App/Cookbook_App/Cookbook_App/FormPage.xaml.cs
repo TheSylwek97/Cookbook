@@ -17,6 +17,7 @@ namespace Cookbook_App
         private Recipe _recipe;
         string pathToFile;
         private CategoryDataType formcategory;
+      
 
         public FormPage (Recipe recipe = null, CategoryDataType formcategory = CategoryDataType.Soups)
 		{
@@ -27,6 +28,8 @@ namespace Cookbook_App
             _recipe = recipe;
             this.formcategory = formcategory;
             //CategoryDataType categoryForm;
+            string _ingredients = recipe.Ingredient;
+            string[] listIng = _ingredients.Split(';');
 
             if (_recipe != null)
             {
@@ -36,11 +39,25 @@ namespace Cookbook_App
                 entryRecipe_Text_Area.Text = _recipe.Recipe_Text_Area;
                // categoryForm = _recipe.Category;
                 //btnDelete.IsVisible = true;
-                btnAdd.IsVisible = false;
+                btnAdd.IsVisible = true;
 
+            }
+
+            foreach (var x in listIng)
+            {
+
+                ingList.Children.Add(new Entry { Text = x });
             }
         }
 
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            //overlayBusy.IsVisible = true;
+            //stackBusy.IsVisible = true;
+            await AddNewRecipe();
+            //overlayBusy.IsVisible = false;
+            //stackBusy.IsVisible = false;
+        }
        
         private async Task AddNewRecipe()
         {
@@ -124,9 +141,9 @@ namespace Cookbook_App
             });
         }
 
-        private async void Add_Recipe_Clicked(object sender, EventArgs e)
+       /* private async void Add_Recipe_Clicked(object sender, EventArgs e)
         {
             await AddNewRecipe();
-        }
+        }*/
     }
 }

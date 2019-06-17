@@ -59,7 +59,7 @@ namespace Cookbook_App
 
         private async void Edit_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new DetailEditPage(currentRecipe));
+            await Navigation.PushAsync(new FormPage(currentRecipe));
         }
         
         private async void Delete_Clicked(object sender, EventArgs e)
@@ -73,11 +73,15 @@ namespace Cookbook_App
 
         }
 
+
+
         private async void Add_Clicked(object sender, EventArgs e)
         {
             await Xamarin.Essentials.Share.RequestAsync("tresc", "send");
 
         }
+
+        
 
     }
 }

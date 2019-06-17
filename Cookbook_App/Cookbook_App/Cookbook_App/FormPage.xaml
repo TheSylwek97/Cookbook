@@ -6,22 +6,32 @@
         <ScrollView>
             <Grid Margin="20,35,20,20">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/> <!--1 Lab- Title -->
-                    <RowDefinition Height="*"/> <!--2 Name + Add Photo -->
-                    <RowDefinition Height="*"/> <!--3 Lab-Ingredients-->
-                    <RowDefinition Height="Auto"/> <!--4 $Ingredient-->
-                    <RowDefinition Height="Auto"/> <!--5 Btn Add next -->
-                    <RowDefinition Height="Auto"/> <!--6 Lab- Recipe-->
-                    <RowDefinition Height="Auto"/> <!--7 Text area recipe -->
-                    <RowDefinition Height="Auto"/> <!--8 Btn- Add all -->
-                    <RowDefinition Height="Auto"/> <!--9 Cat -->
-                    <RowDefinition Height="Auto"/> <!--10 Cat -->
+                    <RowDefinition Height="*"/>
+                    <!--1 Lab- Title -->
+                    <RowDefinition Height="*"/>
+                    <!--2 Name + Add Photo -->
+                    <RowDefinition Height="*"/>
+                    <!--3 Lab-Ingredients-->
+                    <RowDefinition Height="Auto"/>
+                    <!--4 $Ingredient-->
+                    <RowDefinition Height="Auto"/>
+                    <!--5 Btn Add next -->
+                    <RowDefinition Height="Auto"/>
+                    <!--6 Lab- Recipe-->
+                    <RowDefinition Height="Auto"/>
+                    <!--7 Text area recipe -->
+                    <RowDefinition Height="Auto"/>
+                    <!--8 Btn- Add all -->
+                    <RowDefinition Height="Auto"/>
+                    <!--9 Cat -->
+                    <RowDefinition Height="Auto"/>
+                    <!--10 Cat -->
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-            
+
                 <Label Text="Dodaj Przepis" Font="Bold,30"/>
                 <Entry x:Name="entryName"  Placeholder="Nazwa" Grid.Row="1" Grid.Column="0"/>
                 <Button x:Name="btnTakePho" Text="Zrób zdj" Clicked="BtnTakePho_Clicked" Grid.Row="1" Grid.Column="1"/>
@@ -32,7 +42,7 @@
                 <StackLayout x:Name="ingList" Grid.Row="4" Grid.ColumnSpan="2">
                     <Entry/>
                 </StackLayout>
-                    <Button x:Name="Add_Next" Text="+" Grid.Row="5" Clicked="Add_Next_Clicked"/>
+                <Button x:Name="Add_Next" Text="+" Grid.Row="5" Clicked="Add_Next_Clicked"/>
 
                 <Label x:Name="lblRecipe" Text="Przepis" Grid.Row="6" TextColor="Gray"/>
                 <Entry x:Name="entryRecipe_Text_Area" Placeholder="Wprowadź przepis" Grid.Row="7" Grid.ColumnSpan="2"/>
@@ -40,9 +50,13 @@
                 <Label x:Name="lblRate" Text="Ocena" Grid.Row="8" TextColor="Gray"/>
                 <Entry x:Name="entryRate" Placeholder="0" Grid.Row="9"  Keyboard="Numeric"  Grid.ColumnSpan="2"/>
 
-                <Button Text="Dodaj przepis" Grid.Row="10" Clicked="Add_Recipe_Clicked" x:Name="btnAdd" Grid.ColumnSpan="2"/>
+                <Button Text="Dodaj przepis" Grid.Row="10" Clicked="Button_Clicked" x:Name="btnAdd" Grid.ColumnSpan="2"/>
 
-            </Grid>
+            
+       
+                
+
+        </Grid>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
