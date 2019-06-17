@@ -49,7 +49,7 @@ namespace Cookbook_App
             foreach(var x in ingList.Children)
             {
                 var entry = (Entry)x;
-                ingredients += entry.Text + ", ";
+                ingredients += entry.Text + " ";
             }
 
             var recipe = new Recipe()

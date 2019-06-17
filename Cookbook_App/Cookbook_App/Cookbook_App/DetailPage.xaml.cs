@@ -22,6 +22,14 @@ namespace Cookbook_App
             currentRecipe = _recipe;
             InitializeComponent ();
             BindingContext = _recipe;
+            string _ingredients = _recipe.Ingredient;
+            string[] listIng = _ingredients.Split(';');
+            foreach (var x in listIng)
+            {
+                ingList.Children.Add(new Label { Text = x});
+                //ingList.Add(new Label { Text = x });
+                //new Label { Text = x };
+            }
 
             switch (_recipe.Rate)
             {
@@ -53,7 +61,7 @@ namespace Cookbook_App
         {
             await Navigation.PushAsync(new DetailEditPage(currentRecipe));
         }
-
+        
         private async void Delete_Clicked(object sender, EventArgs e)
         {
             var answer = await DisplayAlert("Usuń", "Czy jesteś pewień, że chcesz usunąć ten przepis?", "Tak", "Nie");

@@ -20,7 +20,14 @@ namespace Cookbook_App
         {
             _recipe = recipe;
             InitializeComponent();
-            
+            string _ingredients = recipe.Ingredient;
+            string[] listIng = _ingredients.Split(';');
+            //Entry entry;
+            foreach( var x in listIng)
+            {
+                
+                ingList.Children.Add(new Entry { Text = x });
+            }
 
             if(_recipe != null)
             {
@@ -38,7 +45,7 @@ namespace Cookbook_App
             foreach (var x in ingList.Children)
             {
                 var entry = (Entry)x;
-                ingredients += entry.Text + ", ";
+                ingredients += entry.Text + " ";
             }
 
             var recipe = new Recipe()
