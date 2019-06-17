@@ -54,12 +54,14 @@ namespace Cookbook_App
 
             var recipe = new Recipe()
             {
-                Name = entryName.Text,
+               Name = entryName.Text,
                 Rate = int.Parse(entryRate.Text),
-                Ingredient = ingredients,
+               Ingredient = ingredients,
                 Recipe_Text_Area = entryRecipe_Text_Area.Text,
-                FilePath = pathToFile,
-                Category = formcategory,
+               FilePath = pathToFile,
+                Category = formcategory
+
+               
             };
 
             if (_recipe != null)

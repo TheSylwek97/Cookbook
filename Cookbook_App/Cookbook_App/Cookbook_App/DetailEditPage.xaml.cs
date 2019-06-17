@@ -16,10 +16,11 @@ namespace Cookbook_App
         private Recipe _recipe;
         string pathToFile;
         private CategoryDataType formcategory;
-        public DetailEditPage(Recipe recipe = null)
+        public DetailEditPage(Recipe recipe)
         {
             _recipe = recipe;
             InitializeComponent();
+            
 
             if(_recipe != null)
             {
