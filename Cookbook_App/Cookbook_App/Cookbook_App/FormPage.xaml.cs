@@ -26,7 +26,7 @@ namespace Cookbook_App
             InitializeComponent();
             this.formcategory = formcategory;
             //CategoryDataType categoryForm;
-
+            image.Source = ImageSource.FromFile("Assets/no-img.jpg");
             if (_recipe != null)
             {
                 entryName.Text = _recipe.Name;

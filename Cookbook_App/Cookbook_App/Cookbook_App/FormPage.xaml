@@ -2,15 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cookbook_App.FormPage">
+    
     <ContentPage.Content>
         <ScrollView>
             <Grid Margin="20, 35, 20, 20">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
                     <!--1 Lab- Title -->
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
                     <!--2 Name + Add Photo -->
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="180"/>
                     <!--3 Lab-Ingredients-->
                     <RowDefinition Height="Auto"/>
                     <!--4 $Ingredient-->
@@ -30,27 +31,29 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Label Text="Dodaj Przepis" Font="Bold,30"/>
-                <Entry x:Name="entryName"  Placeholder="Nazwa" Grid.Row="1" Grid.Column="0"/>
-                <Button x:Name="btnTakePho" Text="Zrób zdj" Clicked="BtnTakePho_Clicked" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Dodaj Przepis" Font="Bold,30" Grid.Column="0" Grid.ColumnSpan="4" TextColor="#17C0D5"/>
+                <Entry x:Name="entryName"  Placeholder="Nazwa" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Button x:Name="btnTakePho" Text="Zrób zdj" Clicked="BtnTakePho_Clicked" Grid.Row="1" Grid.Column="2"  BackgroundColor="#17C0D5" TextColor="White" Grid.ColumnSpan="2"/>
 
-                <Image x:Name="image" Grid.Row="2" Grid.ColumnSpan="2"/>
+                <Image x:Name="image" Grid.Row="2" Grid.ColumnSpan="4"/>
 
                 <Label x:Name="lblIngredients" Text="Składniki" Grid.Row="3" Grid.ColumnSpan="2" TextColor="Gray" />
-                <StackLayout x:Name="ingList" Grid.Row="4" Grid.ColumnSpan="2">
+                <StackLayout x:Name="ingList" Grid.Row="4" Grid.ColumnSpan="4">
                     <Entry/>
                 </StackLayout>
-                <Button x:Name="Add_Next" Text="+" Grid.Row="5" Clicked="Add_Next_Clicked"/>
+                <Button x:Name="Add_Next" Text="+" Grid.Row="5" Clicked="Add_Next_Clicked" BackgroundColor="#17C0D5" TextColor="White"/>
 
                 <Label x:Name="lblRecipe" Text="Przepis" Grid.Row="6" TextColor="Gray"/>
-                <Entry x:Name="entryRecipe_Text_Area" Placeholder="Wprowadź przepis" Grid.Row="7" Grid.ColumnSpan="2"/>
+                <Entry x:Name="entryRecipe_Text_Area" Placeholder="Wprowadź przepis" Grid.Row="7" Grid.ColumnSpan="4"/>
 
                 <Label x:Name="lblRate" Text="Ocena" Grid.Row="8" TextColor="Gray"/>
-                <Entry x:Name="entryRate" Placeholder="0" Grid.Row="9"  Keyboard="Numeric"  Grid.ColumnSpan="2"/>
+                <Entry x:Name="entryRate" Placeholder="0" Grid.Row="9"  Keyboard="Numeric"  Grid.Column="0"/>
 
-                <Button Text="Dodaj przepis" Grid.Row="10" Clicked="Add_Recipe_Clicked" x:Name="btnAdd" Grid.ColumnSpan="2"/>
+                <Button Text="Dodaj przepis" Grid.Row="9" Clicked="Add_Recipe_Clicked" x:Name="btnAdd" Grid.Column="1" Grid.ColumnSpan="3" BackgroundColor="#17C0D5" TextColor="White"/>
 
             </Grid>
         </ScrollView>

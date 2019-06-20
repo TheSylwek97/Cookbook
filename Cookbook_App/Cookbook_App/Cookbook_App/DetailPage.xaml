@@ -34,9 +34,9 @@
 
             <Image Grid.Row="5" x:Name="imgRate" HorizontalOptions="Center"  Grid.ColumnSpan="2" Margin="0,20,20,0" />
 
-            <Button Text="Edytuj"  Grid.Row="6" Grid.Column="0" Clicked="Edit_Clicked" />
-            <Button Text="Usuń"  Grid.Row="6" Grid.Column="1" Clicked="Delete_Clicked"/>
-            <Button Text="Udostępnij"  Grid.Row="7" Clicked="Add_Clicked" Grid.ColumnSpan="2"/>
+            <Button Text="Edytuj"  Grid.Row="6" Grid.Column="0" Clicked="Edit_Clicked" BackgroundColor="#17C0D5" TextColor="White"/>
+            <Button Text="Usuń"  Grid.Row="6" Grid.Column="1" Clicked="Delete_Clicked" BackgroundColor="#17C0D5" TextColor="White"/>
+            <Button Text="Udostępnij"  Grid.Row="7" Clicked="Add_Clicked" Grid.ColumnSpan="2" BackgroundColor="#17C0D5" TextColor="White"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
