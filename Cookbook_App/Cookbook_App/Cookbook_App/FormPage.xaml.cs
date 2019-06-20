@@ -119,7 +119,18 @@ namespace Cookbook_App
 
         private async void Add_Recipe_Clicked(object sender, EventArgs e)
         {
-            await AddNewRecipe();
+
+            if (entryName.Text == null || entryRecipe_Text_Area.Text == null || entryRate.Text == null)
+            {
+                await DisplayAlert("Błąd", $"Proszę uzupełnić wszystkie pola", "ok");
+                /*if (entryRate.Text != nu)
+                {
+
+                }*/
+            }
+            else
+                await AddNewRecipe();
+
         }
     }
 }
