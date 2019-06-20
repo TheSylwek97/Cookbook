@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="40" />
+                <RowDefinition Height="140" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="40" />
                 <RowDefinition Height="40" />
@@ -22,13 +22,14 @@
             </ListView>
             
             <Button Grid.Row="2" 
-                   Text="Dodaj przepis"
-                   Clicked="Add_Button_Clicked"/>
+                    Text="Dodaj przepis"
+                    Clicked="Add_Button_Clicked"
+                    x:Name="Add_Button"/>
 
 
             <Image x:Name="img"
                    Grid.Row="0"
-                   HeightRequest="40"
+                   HeightRequest="140"
                    HorizontalOptions="Fill"
                    Aspect="AspectFill"
                    ></Image>

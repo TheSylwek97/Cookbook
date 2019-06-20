@@ -21,7 +21,6 @@ namespace Cookbook_App
         public FormPage (Recipe recipe = null, CategoryDataType formcategory = CategoryDataType.Soups)
 		{
 			InitializeComponent ();
-            _recipe = recipe;
             this.formcategory = formcategory;
             //CategoryDataType categoryForm;
 

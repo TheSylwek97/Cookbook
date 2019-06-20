@@ -24,15 +24,15 @@ namespace Cookbook_App
             switch (category)
             {
                 case CategoryDataType.ScDish:
-                    img.Source = ImageSource.FromFile("Assets/2nd_Dish_Small.jpg");
+                    img.Source = ImageSource.FromFile("Assets/main-courses.jpg");
                     formcategory = CategoryDataType.ScDish;
                     break;
                 case CategoryDataType.Dessers:
-                    img.Source = ImageSource.FromFile("Assets/Dessert_Small.jpg");
+                    img.Source = ImageSource.FromFile("Assets/Dessert.jpg");
                     formcategory = CategoryDataType.Dessers;
                     break;
                 default:
-                    img.Source = ImageSource.FromFile("Assets/Soup_Small.jpg");
+                    img.Source = ImageSource.FromFile("Assets/Soup.jpg");
                     formcategory = CategoryDataType.Soups;
                     break;
             }
@@ -62,6 +62,9 @@ namespace Cookbook_App
             else
             {
                 recpies = await App.LocalDB.GetRecpiesLikeName(localSearch);
+                img.Source = ImageSource.FromFile("Assets/search.jpg");
+                Add_Button.IsVisible = false;
+
             }
             //_recipe = await App.LocalDB.GetRecpies<Recipe>();
             //MyListView.ItemsSource = _recipe;
