@@ -43,7 +43,7 @@
 
                 <Label x:Name="lblIngredients" Text="Składniki" Grid.Row="3" Grid.ColumnSpan="2" TextColor="Gray" />
                 <StackLayout x:Name="ingList" Grid.Row="4" Grid.ColumnSpan="4">
-                    <Entry/>
+                    <Entry x:Name="oneIng"/>
                 </StackLayout>
                 <Button x:Name="Add_Next" Text="+" Grid.Row="5" Clicked="Add_Next_Clicked" BackgroundColor="#17C0D5" TextColor="White"/>
 
