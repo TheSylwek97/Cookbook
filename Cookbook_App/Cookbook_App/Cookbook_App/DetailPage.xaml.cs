@@ -13,8 +13,6 @@ namespace Cookbook_App
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class DetailPage : ContentPage
 	{
-        private List<Recipe> _recipesSelected;
-        private List<Recipe> _recipes;
         private Recipe currentRecipe;
 
         public DetailPage (Recipe _recipe)
@@ -80,8 +78,8 @@ namespace Cookbook_App
 
         private async void Add_Clicked(object sender, EventArgs e)
         {
-            await Xamarin.Essentials.Share.RequestAsync("tresc", "send");
-
+            string text = currentRecipe.Ingredient + currentRecipe.Recipe_Text_Area;
+            await Xamarin.Essentials.Share.RequestAsync(currentRecipe.Name, text);
         }
 
     }
