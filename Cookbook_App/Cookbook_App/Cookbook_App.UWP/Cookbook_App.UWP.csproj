@@ -115,6 +115,7 @@
     <Content Include="Assets\LargeTile.scale-400.png" />
     <Content Include="Assets\main-courses-small.jpg" />
     <Content Include="Assets\main-courses.jpg" />
+    <Content Include="Assets\no-img.jpg" />
     <Content Include="Assets\r0.png" />
     <Content Include="Assets\r1.png" />
     <Content Include="Assets\r2.png" />

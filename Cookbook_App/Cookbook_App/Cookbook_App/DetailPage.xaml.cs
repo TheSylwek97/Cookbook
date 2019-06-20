@@ -45,7 +45,10 @@ namespace Cookbook_App
                     break;
             }
 
-            imgOfDish.Source = ImageSource.FromFile(_recipe.FilePath);
+            if(imgOfDish.Source != null)
+                imgOfDish.Source = ImageSource.FromFile(_recipe.FilePath);
+            else
+                imgOfDish.Source = ImageSource.FromFile("Assets/no-img.jpg");
 
         }
 

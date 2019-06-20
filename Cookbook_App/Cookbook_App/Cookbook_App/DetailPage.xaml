@@ -5,34 +5,35 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/> <!--0-->
+                <RowDefinition Height="60"/> <!--0-->
                 <RowDefinition Height="*"/> <!--1-->
-                <RowDefinition Height="*"/> <!--2-->
-                <RowDefinition Height="*"/> <!--3-->
-                <RowDefinition Height="*"/>  <!--4-->
-                <RowDefinition Height="*"/> <!--5-->
-                <RowDefinition Height="*"/>  <!--6-->
-                <RowDefinition Height="*"/><!--7-->
+                <RowDefinition Height="60"/> <!--2-->
+                <RowDefinition Height="Auto"/> <!--3-->
+                <RowDefinition Height="60"/>  <!--4-->
+                <RowDefinition Height="Auto"/> <!--5-->
+                <RowDefinition Height="50"/>  <!--6-->
+                <RowDefinition Height="50"/><!--7-->
+                <RowDefinition Height="50"/><!--8-->
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Label x:Name="Title" Font="Bold,20" Text="{Binding Name}" />
-            <Image Grid.Row="1" x:Name="imgOfDish" Grid.ColumnSpan="2"/>
+            <Label x:Name="Title" Font="Bold,20" Text="{Binding Name}" Margin="20,0,0,20"/>
+            <Image Grid.Row="1" x:Name="imgOfDish" Grid.ColumnSpan="2" Margin="20,0,0,20"/>
 
-            <Label x:Name="Ingredients" Text="Składniki" Grid.Row="2" TextColor="Gray" />
-            <Label x:Name="AllIng" Text="{Binding Ingredient}" Grid.Row="3" Grid.ColumnSpan="2"/>
+            <Label x:Name="Ingredients" Text="Składniki" Grid.Row="2" TextColor="Gray" Margin="20,0,0,20"/>
+            <Label x:Name="AllIng" Text="{Binding Ingredient}" Grid.Row="3" Grid.ColumnSpan="2" Margin="20,0,0,20"/>
 
-            <Label x:Name="Recipe" Text="Przepis" Grid.Row="4" TextColor="Gray"/>
-            <Label Grid.Row="6" Text="{Binding Recipe_Text_Area}" Grid.ColumnSpan="2" />
+            <Label x:Name="Recipe" Text="Przepis" Grid.Row="4" TextColor="Gray" Margin="20,0,0,20"/>
+            <Label Grid.Row="5" Text="{Binding Recipe_Text_Area}" Grid.ColumnSpan="2" Margin="20,0,0,20"/>
 
-            <Image Grid.Row="5" x:Name="imgRate"/>
+            <Image Grid.Row="6" x:Name="imgRate" HorizontalOptions="Center"/>
 
-            <Button Text="Edytuj"  Grid.Row="6" Grid.Column="0" Clicked="Edit_Clicked"/>
-            <Button Text="Usuń"  Grid.Row="6" Grid.Column="1" Clicked="Delete_Clicked"/>
-            <Button Text="Udostępnij"  Grid.Row="7" Clicked="Add_Clicked" Grid.ColumnSpan="2"/>
+            <Button Text="Edytuj"  Grid.Row="7" Grid.Column="0" Clicked="Edit_Clicked"/>
+            <Button Text="Usuń"  Grid.Row="7" Grid.Column="1" Clicked="Delete_Clicked"/>
+            <Button Text="Udostępnij"  Grid.Row="8" Clicked="Add_Clicked" Grid.ColumnSpan="2"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
