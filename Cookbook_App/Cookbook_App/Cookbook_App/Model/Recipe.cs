@@ -14,7 +14,7 @@ namespace Cookbook_App.Model
         public string Name { get; set; }
         public string Ingredient { get; set; }
         public string Recipe_Text_Area { get; set; }
-        public int Rate { get; set; }
+        public uint Rate { get; set; }
         public string FilePath { get; set; }
 
     }

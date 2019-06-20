@@ -51,7 +51,7 @@ namespace Cookbook_App
             var recipe = new Recipe()
             {
                 Name = entryName.Text,
-                Rate = int.Parse(entryRate.Text),
+                Rate = uint.Parse(entryRate.Text),
                 Ingredient = ingredients,
                 Recipe_Text_Area = entryRecipe_Text_Area.Text,
                 FilePath = pathToFile,
@@ -125,12 +125,14 @@ namespace Cookbook_App
                 || entryRate.Text == null
                 || oneIng.Text == null)
             {
-                await DisplayAlert("Błąd", $"Proszę uzupełnić wszystkie pola", "ok");
-                /*if (entryRate.Text != nu)
-                {
-
-                }*/
+                await DisplayAlert("Błąd", $"Proszę uzupełnić wszystkie pola", "Ok");
             }
+
+            else if (!uint.TryParse(entryRate.Text, out uint x) || x > 5 || x < 0)
+            {
+                await DisplayAlert("Błąd", $"W polu Ocena proszę wprowadzić jedynie liczby całkowite od 0 do 5", "Ok");
+            }
+            
             else
                 await AddNewRecipe();
 

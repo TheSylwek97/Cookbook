@@ -50,7 +50,7 @@
                 <Label x:Name="lblRecipe" Text="Przepis" Grid.Row="6" TextColor="Gray"/>
                 <Entry x:Name="entryRecipe_Text_Area" Placeholder="Wprowadź przepis" Grid.Row="7" Grid.ColumnSpan="4"/>
 
-                <Label x:Name="lblRate" Text="Ocena" Grid.Row="8" TextColor="Gray"/>
+                <Label x:Name="lblRate" Text="Ocena (od 0 do 5)" Grid.Row="8" TextColor="Gray"/>
                 <Entry x:Name="entryRate" Placeholder="0" Grid.Row="9"  Keyboard="Numeric"  Grid.Column="0"/>
 
                 <Button Text="Dodaj przepis" Grid.Row="9" Clicked="Add_Recipe_Clicked" x:Name="btnAdd" Grid.Column="1" Grid.ColumnSpan="3" BackgroundColor="#17C0D5" TextColor="White"/>
