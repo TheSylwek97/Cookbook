@@ -1,0 +1,11 @@
+diff a/Cookbook_App/Cookbook_App/Cookbook_App/DetailPage.xaml.cs b/Cookbook_App/Cookbook_App/Cookbook_App/DetailPage.xaml.cs	(rejected hunks)
+@@ -33,6 +33,9 @@
+             string[] listIng = _ingredients.Split(';');
+             foreach (var x in listIng)
+             {
++                ingList.Children.Add(new Label { Text = x});
++                //ingList.Add(new Label { Text = x });
++                //new Label { Text = x };
+             }
+ 
+             switch (_recipe.Rate)

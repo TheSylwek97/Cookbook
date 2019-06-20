@@ -46,11 +46,15 @@
                     Text="Szukaj..."
                     Grid.Row="3"
                     Grid.Column="1"
-                    Clicked="BtnSearch_Clicked"/>
+                    Clicked="BtnSearch_Clicked"
+                    BackgroundColor="#17C0D5"
+                    TextColor="White"
+                    FontAttributes="Bold"/>
 
             <Entry x:Name="entrySearch"
                    Grid.Row="3"
-                   Grid.Column="0"/>
+                   Grid.Column="0"
+                   />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

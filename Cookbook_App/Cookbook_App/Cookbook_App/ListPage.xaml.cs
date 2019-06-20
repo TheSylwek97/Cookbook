@@ -21,6 +21,12 @@ namespace Cookbook_App
         {
             //_cat = category;
             InitializeComponent();
+            /*
+            var scroll = new ScrollView();
+            Content = scroll;
+
+            InitializeComponent();
+            */
             switch (category)
             {
                 case CategoryDataType.ScDish:

@@ -2,38 +2,39 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Cookbook_App"
-             x:Class="Cookbook_App.MainPage">
+             x:Class="Cookbook_App.MainPage"
+             BackgroundColor="#B7B7B7">
 
     <Grid>
-        
+
         <Grid.RowDefinitions>
-            <RowDefinition Height="5*" />
-            <RowDefinition Height="2*" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="300" />
         </Grid.RowDefinitions>
-        
-        
-        <StackLayout BackgroundColor="LightGray">
+
+
+        <StackLayout>
+
+            <Button Text="Rozpocznij" 
+                    Clicked="Button_Clicked" 
+                    Grid.Row="0" 
+                    BackgroundColor="#3C3837"
+                    FontAttributes="Bold"
+                    Margin="20"
+                    TextColor="White"
+                    >
+            </Button>
 
             <Image Source="Assets/Cookbook.jpeg"
-                   HeightRequest="300"
+                   HeightRequest="450"
                    HorizontalOptions="Fill"
-                   Aspect="AspectFill">
-                
+                   Aspect="AspectFill"
+                   Grid.Row="1">
+
             </Image>
-            <!-- <Label Text="Cookbook" 
-                   HorizontalOptions="Center"
-                   VerticalOptions="CenterAndExpand"
-                   />-->
-            
-            <Button Text="Tap to start" 
-                    Clicked="Button_Clicked" 
-                    Grid.Row="1" 
-                    BackgroundColor="Indigo">
-                
-            </Button>
 
         </StackLayout>
     </Grid>
-    
+
 
 </ContentPage>

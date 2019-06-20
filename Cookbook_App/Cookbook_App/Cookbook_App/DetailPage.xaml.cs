@@ -23,6 +23,16 @@ namespace Cookbook_App
             InitializeComponent ();
             BindingContext = _recipe;
 
+            string _ingredients = _recipe.Ingredient;
+            string[] listIng = _ingredients.Split(';');
+            foreach(var x in listIng)
+            {
+                StackIngList.Children.Add(new Label { Text = x });
+                //ingList.Children.Add(new Label { Text = x });
+                //ingList.Add(new Label { Text = x });
+                //new Label { Text = x };
+            }
+
             switch (_recipe.Rate)
             {
                 case 0:

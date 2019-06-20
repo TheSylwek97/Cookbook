@@ -31,7 +31,7 @@
             <StackLayout x:Name="ingList" Grid.Row="4" Grid.ColumnSpan="2">
                     <Entry/>
                 </StackLayout>
-                <Button x:Name="Add_Next" Text="+" Grid.Row="5" Clicked="Add_Next_Clicked"/>
+            <Button x:Name="Add_Next" Text="+" Grid.Row="5" Clicked="Add_Next_Clicked"/>
 
             <Label x:Name="lblRecipe" Text="Przepis" Grid.Row="6" TextColor="Gray"/>
             <Entry x:Name="entryRecipe_Text_Area" Placeholder="Wprowadź przepis" Grid.Row="7" Grid.ColumnSpan="2"/>
