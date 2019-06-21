@@ -15,7 +15,13 @@ namespace Cookbook_App
 		public CategoryPage ()
 		{
 			InitializeComponent ();
-		}
+            /*
+            if (entrySearch.Text != null) //== string.Empty)
+                btnSearch.IsEnabled = true;
+            else
+                btnSearch.IsEnabled = false;
+             */
+        }
 
         private async void Soups_Clicked(object sender, EventArgs e)//, CategoryDataType category)
         {

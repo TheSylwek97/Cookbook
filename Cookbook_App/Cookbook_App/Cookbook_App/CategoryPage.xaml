@@ -38,9 +38,9 @@
                     Clicked="Main_Courses_Clicked"
                     BackgroundColor="#16737E"
                     TextColor="White"
-                    FontAttributes="Bold">
+                    FontAttributes="Bold" />
 
-            </Button>
+
             <Button x:Name="Desserts"
                     Text="Desery"
                     Grid.Row="2" 
@@ -49,9 +49,9 @@
                     Clicked="Desserts_Clicked"
                     BackgroundColor="#16737E"
                     TextColor="White"
-                    FontAttributes="Bold">
+                    FontAttributes="Bold" />
 
-            </Button>
+
             <Button x:Name="btnSearch"
                     Text="Szukaj..."
                     Grid.Row="3"
@@ -59,7 +59,8 @@
                     Clicked="BtnSearch_Clicked"
                     BackgroundColor="#17C0D5"
                     TextColor="White"
-                    FontAttributes="Bold"/>
+                    FontAttributes="Bold"
+                    />
 
             <Entry x:Name="entrySearch"
                    Grid.Row="3"

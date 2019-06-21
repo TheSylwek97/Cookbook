@@ -26,6 +26,7 @@ namespace Cookbook_App
 
             string _ingredients = _recipe.Ingredient;
             string[] listIng = _ingredients.Split(';');
+
             foreach(var x in listIng)
             {
                 StackIngList.Children.Add(new Label { Text = x });
