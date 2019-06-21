@@ -36,6 +36,13 @@ namespace Cookbook_App
                 //entryIngredient.Text = _recipe.Ingredient;
                 entryRecipe_Text_Area.Text = _recipe.Recipe_Text_Area;
                 this.formcategory = _recipe.Category;
+                string _ingredients = recipe.Ingredient;
+                string[] listIng = _ingredients.Split(';');
+                foreach (var x in listIng)
+                {
+
+                    ingList.Children.Add(new Entry { Text = x });
+                }
             }
         }
         private async Task AddNewRecipe()
