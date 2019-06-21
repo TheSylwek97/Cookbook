@@ -65,7 +65,7 @@ namespace Cookbook_App
 
             await App.LocalDB.SaveItem(recipe);
             await DisplayAlert("Sukces", "Zapis powiódł się", "OK");
-            await Navigation.PopAsync();
+            await Navigation.PushAsync(new ListPage(formcategory));
         }
 
         private async void BtnDelete_Clicked(object sender, EventArgs e)
