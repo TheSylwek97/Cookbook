@@ -22,7 +22,7 @@ namespace Cookbook_App
             await Navigation.PushAsync(new CategoryPage());
         }
 
-        protected override async void OnAppearing()
+        protected override  void OnAppearing()
         {
             base.OnAppearing();
             //await RefreshData();

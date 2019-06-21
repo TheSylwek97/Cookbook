@@ -100,14 +100,14 @@ namespace Cookbook_App
 
             if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
             {
-                await DisplayAlert("No Camera", ":( No camera available.", "OK");
+                await DisplayAlert("Brak aparatu", ":( Nie ma dostępnego aparatu.", "OK");
                 return;
             }
 
             var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
             {
                 Directory = "Sample",
-                Name = "test.jpg"
+                Name = "test.jpg" //= recipe.Name
             });
 
             if (file == null)
