@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="#093338"
              x:Class="Cookbook_App.CategoryPage">
-    <ContentPage.Content>
-        <Grid>
+    <ContentPage.Content Margin="10,10,10,10">
+        <Grid >
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -19,28 +19,37 @@
             </Grid.ColumnDefinitions>
 
             <Button x:Name="Soups"
-                    Text="Soups"
+                    Text="Zupy"
                     Grid.Row="0" 
                     Grid.ColumnSpan="2"
                     Image="Assets/Soup-small.jpg"
-                    Clicked="Soups_Clicked"/>
+                    Clicked="Soups_Clicked"
+                    BackgroundColor="#16737E"
+                    TextColor="White"
+                    FontAttributes="Bold"/>
 
 
 
             <Button x:Name="Main_Courses"
-                    Text="Main_Courses"
+                    Text="Drugie danie"
                     Grid.Row="1" 
                     Grid.ColumnSpan="2"
                     Image="Assets/main-courses-small.jpg"
-                    Clicked="Main_Courses_Clicked">
+                    Clicked="Main_Courses_Clicked"
+                    BackgroundColor="#16737E"
+                    TextColor="White"
+                    FontAttributes="Bold">
 
             </Button>
             <Button x:Name="Desserts"
-                    Text="Desserts"
+                    Text="Desery"
                     Grid.Row="2" 
                     Grid.ColumnSpan="2"
                     Image="Assets/Dessert_Big.jpg"
-                    Clicked="Desserts_Clicked">
+                    Clicked="Desserts_Clicked"
+                    BackgroundColor="#16737E"
+                    TextColor="White"
+                    FontAttributes="Bold">
 
             </Button>
             <Button x:Name="btnSearch"
@@ -55,6 +64,9 @@
             <Entry x:Name="entrySearch"
                    Grid.Row="3"
                    Grid.Column="0"
+                   Placeholder="..."
+                   TextColor="#16737E"
+                   BackgroundColor="#17C0D5"
                    />
         </Grid>
     </ContentPage.Content>
