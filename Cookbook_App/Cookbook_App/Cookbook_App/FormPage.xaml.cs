@@ -27,15 +27,15 @@ namespace Cookbook_App
             this.formcategory = formcategory;
             //CategoryDataType categoryForm;
             image.Source = ImageSource.FromFile("Assets/no-img.jpg");
-            if (_recipe != null)
+
+            if (recipe != null)
             {
+                _recipe = recipe;
                 entryName.Text = _recipe.Name;
                 entryRate.Text = _recipe.Rate.ToString();
                 //entryIngredient.Text = _recipe.Ingredient;
                 entryRecipe_Text_Area.Text = _recipe.Recipe_Text_Area;
-               // categoryForm = _recipe.Category;
-                //btnDelete.IsVisible = true;
-                btnAdd.IsVisible = false;
+                this.formcategory = _recipe.Category;
             }
         }
         private async Task AddNewRecipe()
