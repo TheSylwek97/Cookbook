@@ -17,6 +17,9 @@ namespace Cookbook_App
 
         public DetailPage (Recipe _recipe)
 		{
+            var scroll = new ScrollView();
+            Content = scroll;
+
             currentRecipe = _recipe;
             InitializeComponent ();
             BindingContext = _recipe;

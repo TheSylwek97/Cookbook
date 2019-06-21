@@ -40,7 +40,6 @@ namespace Cookbook_App
                 string[] listIng = _ingredients.Split(';');
                 foreach (var x in listIng)
                 {
-
                     ingList.Children.Add(new Entry { Text = x });
                 }
             }
